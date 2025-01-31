@@ -1,0 +1,14 @@
+{
+  "name": "meson-do-camino",
+  "version": "1.0.0",
+  "description": "Página web para el restaurante mesón de camino",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Bienvenido al meson\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}
