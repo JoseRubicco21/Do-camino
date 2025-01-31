@@ -13,20 +13,7 @@
  --accent-dark: #392318;
 }
 
-
-
-
-
-
-/* Sobre-Nosotros CSS */
-#sobre-nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-div {
-    background-color: var(--accent-dark);
+body {
+    margin: 0 auto;
+    background-color: var(--background-light);
 }
