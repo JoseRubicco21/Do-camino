@@ -13,7 +13,11 @@
  --accent-dark: #392318;
 }
 
-body {
-    margin: 0 auto;
+/*
+ Utilizar el main si se quiere tener headers y footers que ocupen toda la longitud.
+ Si no utilizar el body como selector css
+*/
+main {
+    margin: 0 10%;
     background-color: var(--background-light);
 }
