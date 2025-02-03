@@ -1,23 +1,19 @@
 /* CSS - FOOTER */
-/* -------------- */
-/* -------------- */
-/* -------------- */
-
-/* Estilos para el footer */
 .footer {
     font-size: 1rem;
     background-color: var(--background-dark);
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: center;
     position: relative;
     bottom: 0;
 }
 
 #footer-container {
-    height: 5rem;
     display: flex;
     align-items: center;
     color: var(--text-light);
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #footer-container a {
@@ -30,25 +26,26 @@
     text-decoration: underline;
 }
 
-#footer-1, #footer-2, #footer-3 {
+.footer-section {
+    margin: 1rem;
     flex: 1;
 }
 
 #footer-1 {
-    flex: 5;
+    flex: 3;
     text-align: justify;
 }
 
 #footer-2 {
-    text-align: right;
+    text-align: center;
 }
 
 .footer-separator {
     width: 0.05rem;
-    height: 100%;
-    background-color: var(--accent-light);
-    margin: 1em;
-  }
+    height: 6rem;
+    background-color: var(--accent-dark);
+    margin: 0 1rem;
+}
 
 .footer-social-list {
     list-style: none;
@@ -59,5 +56,35 @@
 }
 
 .footer-social-list li {
-    margin: 1rem;
+    margin: 0.5rem;
+}
+
+#footer-1 a {
+    text-decoration: underline;
+}
+
+#footer-1 a:hover,
+#footer-2 a:hover {
+    color: var(--accent-dark);
+}
+
+@media screen and (max-width: 768px) {
+    #footer-container {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        margin-bottom: 1rem;
+    }
+
+    .footer-separator {
+        display: none;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
 }
