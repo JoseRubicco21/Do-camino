@@ -1,64 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/about_us.css">
-    <title>Meson do camiño</title>
-</head>
-<body>
-    <!-- Perol - HEADER -->
-    <header>
-        <div id="header-div-0">
-            <div id="header-div-1">
-                <div id="header-div-navbar"></div>
-                <div id="header-div-logo"></div>
-                <div id="header-div-extras"></div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <!-- Gabriel - CARTAS -->
-        <section id="cartas">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/base.css" />
+		<link rel="stylesheet" href="assets/css/about_us.css" />
+		<link rel="stylesheet" href="assets/css/reservas.css" />
+		<script async src="assets/js/reservas.js"></script>
+		<title>Meson do camiño</title>
+	</head>
+	<body>
+		<!-- Perol - HEADER -->
+		<header>
+			<div id="header-div-0">
+				<div id="header-div-1">
+					<div id="header-div-navbar"></div>
+					<div id="header-div-logo"></div>
+					<div id="header-div-extras"></div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<!-- Gabriel - CARTAS -->
+			<section id="cartas"></section>
+			<!-- Jose - ABOUT US -->
+			<section id="about-us"></section>
+			<!-- Brais - RESERVAS -->
+			<div id="tablaLeyenda">
+				<ul>
+					<li id="leyendaClosed">Cerrado</li>
+					<li id="leyendaFull">Completo</li>
+					<li id="leyendaAvaliable">Disponible</li>
+				</ul>
+			</div>
+			<section id="reservas">
+				<aside id="calendario">
+					<table id="tablaCalendario">
+						<caption id="tituloTabla">
+							<i class="fa-solid fa-caret-left"></i
+							>Febrero 2025<i class="fa-solid fa-caret-right"></i>
+						</caption>
+						<thead>
+							<th>L</th>
+							<th>M</th>
+							<th>Mi</th>
+							<th>J</th>
+							<th>V</th>
+							<th>S</th>
+							<th>D</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td class="dayPast">1</td>
+								<td class="dayPast">2</td>
+							</tr>
+							<tr>
+								<td class="dayToday">3</td>
+								<td class="dayFull">4</td>
+								<td class="dayFull">5</td>
+								<td class="dayFull">6</td>
+								<td class="dayFull">7</td>
+								<td class="dayClosed">8</td>
+								<td class="dayClosed">9</td>
+							</tr>
+							<tr>
+								<td class="dayFull">10</td>
+								<td class="dayFull">11</td>
+								<td class="dayFull">12</td>
+								<td class="dayFull">13</td>
+								<td class="dayFull">14</td>
+								<td class="dayClosed">15</td>
+								<td class="dayClosed">16</td>
+							</tr>
+							<tr>
+								<td class="dayFull">17</td>
+								<td class="dayFull">18</td>
+								<td class="dayAvaliable">19</td>
+								<td class="dayAvaliable">20</td>
+								<td class="dayFull">21</td>
+								<td class="dayClosed">22</td>
+								<td class="dayClosed">23</td>
+							</tr>
+							<tr>
+								<td class="dayFull">24</td>
+								<td class="dayFull">25</td>
+								<td class="dayAvaliable">26</td>
+								<td class="dayAvaliable">27</td>
+								<td class="dayAvaliable">28</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</aside>
+				<aside id="formulario">
+					<form action="/">
+						<label for="dataSeleccionada">Data Seleccionada</label>
+						<br />
+						<input
+							type="text"
+							id="dataSeleccionada"
+							name="dataSeleccionada"
+							disabled
+						/>
+						<br /><br />
+						<label for="horaReserva">Hora</label>
+						<br />
+						<select id="horaReserva" name="horaReserva">
+							<option value="13:00">13:00</option>
+							<option value="14:00">14:00</option>
+							<option value="15:00">15:00</option>
+							<option value="20:00">20:00</option>
+							<option value="21:00">21:00</option>
+							<option value="22:00">22:00</option>
+							<option value="23:00">23:00</option>
+						</select>
 
-        </section>
-        <!-- Jose - ABOUT US -->
-        <section id="about-us">
-            <div class="about-us-img"  id="about-us-1"></div>
-            <article class="about-us-text" id="about-us-2" >
-                <h2>
-                    El Restaurante
-                </h2>
-                <p>El Mesón do camiño inció con la simple idea "Si tanto se recorre a pie, ¿Por qué no recorrerlo con la boca?" Así se decidió emprender un restaurante que recorra gastronómicamente los caminos que llevan a nuestro querido Santiago.
-                </p>
-                <p>
-                    Contamos con diferentes que te llevarán por una experiencia de sabores única, contando con los platos más famosos de la geografia que cruzan los peregrinos de cada camino es perfecto para experimentar aquellos caminos que aún no se han recorrido.
-                </p>
-            </article>
-            <article class="about-us-text"  id="about-us-3">
-                <h2>
-                    El equipo
-                </h2>
-                <p>
-                    Los mejores cocineros de santiagos que tambíen han recorrido el camino
-                    <ul>
-                        <li>Pepe Linares</li>
-                        <li>Juan Carlos de la rosa</li>
-                        <li>Zaria Ferro</li>
-                    </ul>
-                </p>
-            </article>
-            <div class="about-us-img" id="about-us-4" >img</div>
-        </section>
-        <!-- Brais - RESERVAS -->
-        <section id="reservas">
+						<br /><br />
+						<label for="email">Correo electrónico:</label>
+						<br />
+						<input
+							type="email"
+							id="email"
+							name="email"
+							required
+						/><br /><br />
 
-        </section>
-    </main>
-    <!-- Alexandre - FOOTER -->
-    <footer>
+						<label for="numGente">Número de personas:</label>
+						<br />
+						<input
+							type="number"
+							id="numGente"
+							name="numGente"
+							min="1"
+							required
+						/><br /><br />
 
-    </footer>
-</body>
+						<label for="comentario">Comentarios adicionales:</label
+						><br />
+						<textarea
+							id="comentario"
+							name="comentario"
+							rows="4"
+							cols="20"
+						></textarea
+						><br /><br />
+
+						<button type="submit">Enviar Reserva</button>
+					</form>
+				</aside>
+			</section>
+		</main>
+		<!-- Alexandre - FOOTER -->
+		<footer></footer>
+	</body>
 </html>
