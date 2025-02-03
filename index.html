@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/about_us.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Meson do camiño</title>
   </head>
   <body>
@@ -13,30 +18,33 @@
     <header>
       <div id="header-div-0">
         <div id="header-div-1">
-          <div id="header-div-navbar">
-            <ul id="header-ul">
-              <li id="header-li">
-                <a href="#" id="header-link">Home</a>
-              </li>
-              <li id="header-li">
-                <a href="#" id="header-link">News</a>
-              </li>
-              <li id="header-li">
-                <a href="#" id="header-link">Contact</a>
-              </li>
-              <li id="header-li">
-                <a href="#" id="header-link">About</a>
-              </li>
-            </ul>
+          <div id="header-div-dropdown">
+            <div class="cards" class="dropdown-content">
+              <div class="card red">
+                <p class="tip">CARTA</p>
+              </div>
+              <div class="card blue">
+                <p class="tip">CONTACTO</p>
+              </div>
+              <div class="card green">
+                <p class="tip">ABOUT US</p>
+              </div>
+            </div>
           </div>
           <div id="header-div-logo">
             <img
               src="/assets/images/logo.png"
               alt="Logo Do Camiño"
-              id="header-img"
+              id="header-img-logo"
             />
           </div>
-          <div id="header-div-extras">EXTRAS</div>
+          <div id="header-div-navbar">
+            <ul id="header-ul">
+              <li id="header-li">
+                <a href="#" id="header-link" class="reserva">RESERVA YA!</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
