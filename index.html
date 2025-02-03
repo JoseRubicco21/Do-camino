@@ -3,8 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/a7fd78ffdf.js"
+			crossorigin="anonymous"
+		></script>
 		<link rel="stylesheet" href="./assets/css/base.css" />
+		<link rel="stylesheet" href="./assets/css/header.css" />
 		<link rel="stylesheet" href="assets/css/about_us.css" />
+		<link rel="stylesheet" href="assets/css/footer.css" />
 		<link rel="stylesheet" href="assets/css/reservas.css" />
 		<script async src="assets/js/reservas.js"></script>
 		<title>Meson do camiño</title>
@@ -14,9 +20,30 @@
 		<header>
 			<div id="header-div-0">
 				<div id="header-div-1">
-					<div id="header-div-navbar"></div>
-					<div id="header-div-logo"></div>
-					<div id="header-div-extras"></div>
+					<div id="header-div-navbar">
+						<ul id="header-ul">
+							<li id="header-li">
+								<a href="#" id="header-link">Home</a>
+							</li>
+							<li id="header-li">
+								<a href="#" id="header-link">News</a>
+							</li>
+							<li id="header-li">
+								<a href="#" id="header-link">Contact</a>
+							</li>
+							<li id="header-li">
+								<a href="#" id="header-link">About</a>
+							</li>
+						</ul>
+					</div>
+					<div id="header-div-logo">
+						<img
+							src="/assets/images/logo.png"
+							alt="Logo Do Camiño"
+							id="header-img"
+						/>
+					</div>
+					<div id="header-div-extras">EXTRAS</div>
 				</div>
 			</div>
 		</header>
@@ -24,7 +51,51 @@
 			<!-- Gabriel - CARTAS -->
 			<section id="cartas"></section>
 			<!-- Jose - ABOUT US -->
-			<section id="about-us"></section>
+			<section id="about-us">
+				<div class="about-us-img-div" id="about-us-1">
+					<img
+						class="about-us-img"
+						src="./assets/images/restaurant_1.jpg"
+						alt="imagen de uno de los chefs."
+					/>
+				</div>
+				<article class="about-us-text" id="about-us-2">
+					<h2>El Restaurante</h2>
+					<p>
+						El Mesón do camiño inció con la simple idea "Si tanto se
+						recorre a pie, ¿Por qué no recorrerlo con la boca?" Así
+						se decidió emprender un restaurante que recorra
+						gastronómicamente los caminos que llevan a nuestro
+						querido Santiago.
+					</p>
+					<p>
+						Contamos con diferentes que te llevarán por una
+						experiencia de sabores única, contando con los platos
+						más famosos de la geografia que cruzan los peregrinos de
+						cada camino es perfecto para experimentar aquellos
+						caminos que aún no se han recorrido.
+					</p>
+				</article>
+				<article class="about-us-text" id="about-us-3">
+					<h2>El equipo</h2>
+					<p>
+						Los mejores cocineros de santiagos que tambíen han
+						recorrido el camino
+					</p>
+					<ul>
+						<li>Pepe Linares</li>
+						<li>Juan Carlos de la rosa</li>
+						<li>Zaria Ferro</li>
+					</ul>
+				</article>
+				<div class="about-us-img-div" id="about-us-4">
+					<img
+						class="about-us-img"
+						src="./assets/images/chef_1.jpg"
+						alt="imagen de uno de los chefs."
+					/>
+				</div>
+			</section>
 			<!-- Brais - RESERVAS -->
 			<div id="tablaLeyenda">
 				<ul>
@@ -157,6 +228,46 @@
 			</section>
 		</main>
 		<!-- Alexandre - FOOTER -->
-		<footer></footer>
+		<footer class="footer">
+			<div id="footer-container">
+				<div id="footer-1">
+					De conformidad con lo dispuesto en el artículo 10 de la Ley
+					34/2002, de 11 de julio, de Servicios de Sociedad de la
+					Información y Comercio Electrónico, se informa que
+					https://www.docamino.com es un dominio de Devind, S.L. con
+					CIF: B55153783 y domicilio social en c/Villaviciosa 12,
+					16701 Santiago de Compostela, teléfono 983548134 y mail
+					contact@devind.com.
+				</div>
+				<div class="footer-separator"></div>
+				<div id="footer-2">
+					<ul class="footer-social-list">
+						<li>
+							<a href=""
+								><i class="fa-brands fa-square-facebook"></i>
+								Facebook</a
+							>
+						</li>
+						<li>
+							<a href=""
+								><i class="fa-brands fa-instagram"></i>
+								Instagram</a
+							>
+						</li>
+						<li>
+							<a href=""
+								><i class="fa-brands fa-square-x-twitter"></i>
+								Twitter</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-separator"></div>
+				<div id="footer-3">
+					<a href="">Política de cookies</a>
+				</div>
+			</div>
+		</footer>
 	</body>
+	>>>>>>> fc75fd286c331a8172cfcc613f82267d9d88f9d5
 </html>

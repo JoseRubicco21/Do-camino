@@ -1,0 +1,63 @@
+/* CSS - FOOTER */
+/* -------------- */
+/* -------------- */
+/* -------------- */
+
+/* Estilos para el footer */
+.footer {
+    font-size: 1rem;
+    background-color: var(--background-dark);
+    padding: 0.5rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+#footer-container {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    color: var(--text-light);
+}
+
+#footer-container a {
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+#footer-container a:hover {
+    color: var(--accent-dark);
+    text-decoration: underline;
+}
+
+#footer-1, #footer-2, #footer-3 {
+    flex: 1;
+}
+
+#footer-1 {
+    flex: 5;
+    text-align: justify;
+}
+
+#footer-2 {
+    text-align: right;
+}
+
+.footer-separator {
+    width: 0.05rem;
+    height: 100%;
+    background-color: var(--accent-light);
+    margin: 1em;
+  }
+
+.footer-social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-list li {
+    margin: 1rem;
+}
