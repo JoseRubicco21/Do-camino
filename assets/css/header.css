@@ -1,11 +1,9 @@
-/* CSS - HEADER */
-/* ------------ */
-/* ------------ */
-/* ------------ */
-
 body {
   height: 100vh;
   width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
 }
 
 header {
@@ -24,57 +22,220 @@ header {
 }
 
 #header-div-1 {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 90%;
   height: 80%;
+  border: 1px solid black;
+}
+
+#header-div-navbar,
+#header-div-logo,
+#header-div-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 #header-div-navbar {
-  display: flex;
-  width: 33%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+  width: 30%;
 }
 
 #header-div-logo {
-  display: flex;
-  height: 100%;
-  width: 34%;
-  align-items: center;
-  justify-content: center;
+  width: 30%;
 }
 
-#header-div-extras {
-  display: flex;
-  height: 100%;
-  width: 33%;
-  align-items: center;
-  justify-content: center;
+#header-div-dropdown {
+  width: 40%;
 }
 
-#header-img {
-  width: 100%;
-  height: 300%;
+#header-img-icon {
+  height: 35%;
+  width: 10%;
+}
+
+#header-img-logo {
+  width: 90%;
 }
 
 #header-ul {
   list-style-type: none;
-}
-
-#header-li {
-  display: inline;
-  gap: 20%;
+  margin: 0;
+  padding: 0;
 }
 
 #header-link {
+  font-weight: 700;
   text-decoration: none;
   color: black;
+  display: block;
+  padding: 10px;
+}
+
+#header-link:hover {
+  color: white;
+}
+
+.reserva {
+  border: 1px solid #bcb2a8;
+  font-size: x-large;
+}
+
+.cards {
+  font-family: "Rubik", sans-serif;
+  font-size: x-large;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 20%;
+  width: 20%;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: 0.7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+  color: white;
+}
+
+.card:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+/* MEDIA QUERIES PARA ADAPTAR EL DISEÑO A PANTALLAS MÁS PEQUEÑAS */
+
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #header-div-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header-div-navbar {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  #header-div-logo {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  #header-img-logo {
+    width: 80%;
+  }
+
+  #header-ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #header-link {
+    font-size: 1em;
+  }
+
+  .cards .card {
+    width: 30%; /* Aumentamos el tamaño de las tarjetas en pantallas más pequeñas */
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #header-div-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header-div-navbar {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  #header-div-logo {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  #header-ul {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #header-li {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .cards .card {
+    width: 45%; /* Las tarjetas se hacen más grandes en pantallas medianas */
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  #header-div-logo {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  #header-div-navbar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .cards .card {
+    width: 90%; /* Las tarjetas ocupan casi todo el ancho de la pantalla */
+    height: 180px;
+    margin-bottom: 10px;
+  }
 }
