@@ -18,6 +18,12 @@
  Si no utilizar el body como selector css
 */
 main {
-    margin: 0 10%;
     background-color: var(--background-light);
 }
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
