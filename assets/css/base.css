@@ -13,6 +13,19 @@
  --accent-dark: #392318;
 }
 
+/* FUENTES */ 
+/* ------- */
+/* ------- */
+/* ------- */
+
+/* RUBIK */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* Doc: https://fonts.google.com/specimen/Rubik */
+
+/* NUNITO SANS */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* Doc: https://fonts.google.com/specimen/Nunito+Sans*/
+
 /*
  Utilizar el main si se quiere tener headers y footers que ocupen toda la longitud.
  Si no utilizar el body como selector css
