@@ -171,58 +171,73 @@
 				</aside>
 				<aside id="formulario">
 					<form action="/">
-						<label for="dataSeleccionada">Data Seleccionada</label>
-						<br />
-						<input
-							type="text"
-							id="dataSeleccionada"
-							name="dataSeleccionada"
-							disabled
-						/>
-						<br /><br />
-						<label for="horaReserva">Hora</label>
-						<br />
-						<select id="horaReserva" name="horaReserva">
-							<option value="13:00">13:00</option>
-							<option value="14:00">14:00</option>
-							<option value="15:00">15:00</option>
-							<option value="20:00">20:00</option>
-							<option value="21:00">21:00</option>
-							<option value="22:00">22:00</option>
-							<option value="23:00">23:00</option>
-						</select>
+						<div id="dataHoraDiv">
+							<label for="dataSeleccionada"
+								>Data Seleccionada</label
+							>
+							<br />
+							<input
+								class="input"
+								type="text"
+								id="dataSeleccionada"
+								name="dataSeleccionada"
+								disabled
+							/>
 
-						<br /><br />
-						<label for="email">Correo electrónico:</label>
-						<br />
-						<input
-							type="email"
-							id="email"
-							name="email"
-							required
-						/><br /><br />
+							<label for="horaReserva">Hora</label>
+							<br />
+							<select
+								id="horaReserva"
+								name="horaReserva"
+								class="input"
+							>
+								<option value="13:00">13:00</option>
+								<option value="14:00">14:00</option>
+								<option value="15:00">15:00</option>
+								<option value="20:00">20:00</option>
+								<option value="21:00">21:00</option>
+								<option value="22:00">22:00</option>
+								<option value="23:00">23:00</option>
+							</select>
+						</div>
+						<div id="correoNumeroDiv">
+							<label for="email">Correo electrónico:</label>
+							<br />
+							<input
+								class="input"
+								type="email"
+								id="email"
+								name="email"
+								required
+							/>
 
-						<label for="numGente">Número de personas:</label>
-						<br />
-						<input
-							type="number"
-							id="numGente"
-							name="numGente"
-							min="1"
-							required
-						/><br /><br />
-
-						<label for="comentario">Comentarios adicionales:</label
-						><br />
-						<textarea
-							id="comentario"
-							name="comentario"
-							rows="4"
-							cols="20"
-						></textarea
-						><br /><br />
-
-						<button type="submit">Enviar Reserva</button>
+							<label for="numGente">Número de personas:</label>
+							<br />
+							<input
+								class="input"
+								type="number"
+								id="numGente"
+								name="numGente"
+								min="1"
+								max="10"
+								required
+							/>
+						</div>
+						<div id="comentarioDiv">
+							<label for="comentario"
+								>Comentarios adicionales:</label
+							><br />
+							<textarea
+								class="input"
+								id="comentario"
+								name="comentario"
+								rows="4"
+								cols="20"
+							></textarea>
+						</div>
+						<div id="buttonDiv">
+							<button type="button">Enviar Reserva</button>
+						</div>
 					</form>
 				</aside>
 			</section>
@@ -269,5 +284,4 @@
 			</div>
 		</footer>
 	</body>
-	>>>>>>> fc75fd286c331a8172cfcc613f82267d9d88f9d5
 </html>
