@@ -1,0 +1,125 @@
+#reservas {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	align-items: space-between;
+	width: 90%;
+	gap: 20px;
+}
+#calendario {
+	align-self: center;
+}
+#tablaLeyenda {
+	margin: auto;
+	height: auto;
+	width: 90%;
+}
+ul {
+	list-style-type: none;
+	padding: 5px;
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+	background-color: #bcb2a8;
+}
+#leyendaClosed::before {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: black;
+	margin-right: 10px;
+	border: 1px solid;
+}
+#leyendaFull::before {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: #835139;
+	border: 1px solid;
+
+	margin-right: 10px;
+}
+#leyendaAvaliable::before {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: white;
+	margin-right: 10px;
+	border: 1px solid;
+}
+#tablaCalendario > caption {
+	font-weight: 600;
+}
+
+th {
+	border: 1px solid black;
+	text-align: center;
+}
+tr > td {
+	border: 1px solid black;
+	text-align: center;
+	color: #ffffff;
+	padding: 5px;
+}
+.dayPast {
+	color: rgb(179, 177, 177);
+	background-color: white;
+}
+.dayToday {
+	background-color: rgb(179, 177, 177);
+}
+.dayFull {
+	background-color: #835139;
+}
+.dayClosed {
+	background-color: black;
+	color: rgb(179, 177, 177);
+}
+.dayAvaliable {
+	color: black;
+}
+.dayAvaliable:hover {
+	background-color: #bcb2a8;
+	cursor: pointer;
+}
+
+#formulario {
+	display: grid;
+	place-items: center;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+	padding: 20px;
+
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 400px;
+}
+
+#numGente {
+	width: 50px;
+}
+label {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+button {
+	font-size: 1.5rem;
+	color: #fafafa;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 2px solid #fafafa;
+	background: #252525;
+	box-shadow: 3px 3px #fafafa;
+	cursor: pointer;
+	margin: 35px 0;
+}
+
+button:active {
+	box-shadow: none;
+	transform: translate(3px, 3px);
+}
