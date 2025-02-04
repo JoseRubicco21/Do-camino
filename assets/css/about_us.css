@@ -32,34 +32,31 @@
 
 #about-us-2,
 #about-us-3 {
-  background-color: var(--accent-dark);
+  background-color: var(--background-dark);
   color: var(--text-light);
 }
 
 .about-us-img,
 .about-us-text {
+   padding: 10px;
   height: calc(100vw / 4);
   border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
-  #about-us {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 0;
+  #about-us  {
+    display: flex;
+    flex-direction: column;
   }
-
-  #about-us-1,
-  #about-us-2,
-  #about-us-3,
-  #about-us-4 {
-    grid-column: 1 / -1;
-  }
-
   .about-us-img,
   .about-us-text {
-    height: auto;
-    max-height: 512px;
+    padding: 10px;
+    height: 100%;
+    max-height: 1024px;
+  }
+
+  .about-us-img {
+    height: 256px;
   }
 }
