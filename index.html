@@ -173,92 +173,97 @@
                 disabled
               />
 
-              <label for="horaReserva">Hora</label>
-              <br />
-              <select id="horaReserva" name="horaReserva" class="input">
-                <option value="13:00">13:00</option>
-                <option value="14:00">14:00</option>
-                <option value="15:00">15:00</option>
-                <option value="20:00">20:00</option>
-                <option value="21:00">21:00</option>
-                <option value="22:00">22:00</option>
-                <option value="23:00">23:00</option>
-              </select>
-            </div>
-            <div id="correoNumeroDiv">
-              <label for="email">Correo electrónico:</label>
-              <br />
-              <input
-                class="input"
-                type="email"
-                id="email"
-                name="email"
-                required
-              />
+							<label for="horaReserva">Hora</label>
+							<br />
+							<select
+								id="horaReserva"
+								name="horaReserva"
+								class="input"
+							>
+								<option value="13:00">13:00</option>
+								<option value="14:00">14:00</option>
+								<option value="15:00">15:00</option>
+								<option value="20:00">20:00</option>
+								<option value="21:00">21:00</option>
+								<option value="22:00">22:00</option>
+								<option value="23:00">23:00</option>
+							</select>
+						</div>
+						<div id="correoNumeroDiv">
+							<label for="email">Correo electrónico:</label>
+							<br />
+							<input
+								class="input"
+								type="email"
+								id="email"
+								name="email"
+								required
+							/>
 
-              <label for="numGente">Número de personas:</label>
-              <br />
-              <input
-                class="input"
-                type="number"
-                id="numGente"
-                name="numGente"
-                min="1"
-                max="10"
-                required
-              />
+							<label for="numGente">Número de personas:</label>
+							<br />
+							<input
+								class="input"
+								type="number"
+								id="numGente"
+								name="numGente"
+								min="1"
+								max="10"
+								required
+							/>
+						</div>
+						<div id="comentarioDiv">
+							<label for="comentario"
+								>Comentarios adicionales:</label
+							><br />
+							<textarea
+								class="input"
+								id="comentario"
+								name="comentario"
+								rows="4"
+								cols="20"
+							></textarea>
+						</div>
+						<div id="buttonDiv">
+							<button type="button">Enviar Reserva</button>
+						</div>
+					</form>
+				</aside>
+			</section>
+		</main>
+		<!-- Alexandre - FOOTER -->
+		<footer class="footer">
+            <div id="footer-container">
+                <section id="footer-1" class="footer-section">
+                    <p>
+                        De conformidad con lo dispuesto en el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de Sociedad de la Información y Comercio Electrónico, se informa que 
+                        <a href="https://www.docamino.com">https://www.docamino.com</a> es un dominio de Devind, S.L. con CIF: B55153783 y domicilio social en c/Villaviciosa 12, 16701 Santiago de Compostela, 
+                        teléfono <a href="tel:983548134">983548134</a> y mail <a href="mailto:contact@devind.com">contact@devind.com</a>.
+                    </p>
+                </section>
+                
+                <div class="footer-separator"></div>
+                
+                <section id="footer-2" class="footer-section">
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="#" aria-label="Seguirnos en Facebook"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Seguirnos en Instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Seguirnos en Twitter"><i class="fa-brands fa-square-x-twitter fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </section>
+                
+                <div class="footer-separator"></div>
+                
+                <section id="footer-3" class="footer-section">
+                    <a href="#">Política de cookies</a>
+                </section>
             </div>
-            <div id="comentarioDiv">
-              <label for="comentario">Comentarios adicionales:</label><br />
-              <textarea
-                class="input"
-                id="comentario"
-                name="comentario"
-                rows="4"
-                cols="20"
-              ></textarea>
-            </div>
-            <div id="buttonDiv">
-              <button type="button">Enviar Reserva</button>
-            </div>
-          </form>
-        </aside>
-      </section>
-    </main>
-    <!-- Alexandre - FOOTER -->
-    <footer class="footer">
-      <div id="footer-container">
-        <div id="footer-1">
-          De conformidad con lo dispuesto en el artículo 10 de la Ley 34/2002,
-          de 11 de julio, de Servicios de Sociedad de la Información y Comercio
-          Electrónico, se informa que https://www.docamino.com es un dominio de
-          Devind, S.L. con CIF: B55153783 y domicilio social en c/Villaviciosa
-          12, 16701 Santiago de Compostela, teléfono 983548134 y mail
-          contact@devind.com.
-        </div>
-        <div class="footer-separator"></div>
-        <div id="footer-2">
-          <ul class="footer-social-list">
-            <li>
-              <a href=""
-                ><i class="fa-brands fa-square-facebook"></i> Facebook</a
-              >
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
-            </li>
-            <li>
-              <a href=""
-                ><i class="fa-brands fa-square-x-twitter"></i> Twitter</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="footer-separator"></div>
-        <div id="footer-3">
-          <a href="">Política de cookies</a>
-        </div>
-      </div>
-    </footer>
-  </body>
+        </footer>
+	</body>
 </html>

@@ -2,9 +2,10 @@
 	margin: auto;
 	display: grid;
 	place-items: center;
-	grid-template-columns: auto auto;
+	grid-template-columns: 1fr 2fr;
 	width: 90%;
 	gap: 20px;
+	margin-bottom: 10px;
 }
 #tablaCalendario {
 	scale: 1.3;
@@ -98,7 +99,7 @@ th {
 	padding: 20px;
 
 	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	width: 100%;
 	max-width: 400px;
 }
@@ -198,4 +199,11 @@ label {
 #buttonDiv {
 	display: flex;
 	justify-content: center;
+}
+
+#dataSeleccionada {
+	text-align: center;
+}
+#numGente {
+	text-align: center;
 }
