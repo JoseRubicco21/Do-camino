@@ -68,7 +68,7 @@
     color: var(--accent-dark);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     #footer-container {
         flex-direction: column;
         height: auto;
