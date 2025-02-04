@@ -5,25 +5,29 @@
 
 #about-us {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin: 5% 10%;
+  background-color: var(--background-light);
 }
 
 #about-us-1 {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 1 / 3;
   background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(57,35,24,0.1023984593837535) 30%), url(../images/restaurant_1.jpg);
+  
 }
 #about-us-2 {
-  grid-area: 1 / 2 / 2 / 3;
+  grid-area: 1 / 3 / 2 / 3;
 }
 #about-us-3 {
   grid-area: 2 / 1 / 3 / 2;
 }
 #about-us-4 {
-  grid-area: 2 / 2 / 3 / 3;
-  background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(57,35,24,0.1023984593837535) 30%), url(../images/chef_1.jpg);
+  grid-area: 2 / 2 / 3 / 4;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(57,35,24,0.1023984593837535) 30%), url(../images/chef_1.jpg);
+  background-size: cover;
 }
 
 #about-us-2,
@@ -34,8 +38,8 @@
 
 .about-us-img,
 .about-us-text {
-  background-size: cover;
-  height: calc(100vw / 3);
+  height: calc(100vw / 4);
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
