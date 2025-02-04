@@ -23,7 +23,7 @@
 }
 #about-us-4 {
   grid-area: 2 / 2 / 3 / 3;
-  background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(57,35,24,0.1023984593837535) 30%), url(../images/chef_1.jpg);
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(57,35,24,0.1023984593837535) 30%), url(../images/chef_1.jpg);
 }
 
 #about-us-2,
@@ -34,8 +34,7 @@
 
 .about-us-img,
 .about-us-text {
-  background-size: cover;
-  height: calc(100vw / 3);
+  height: calc(100vw / 8);
 }
 
 @media (max-width: 768px) {
