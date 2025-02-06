@@ -18,7 +18,7 @@
 	height: auto;
 	width: 90%;
 }
-ul {
+#tablaLeyenda ul {
 	list-style-type: none;
 	padding: 5px;
 	display: flex;
@@ -58,7 +58,7 @@ ul {
 	font-weight: 600;
 }
 
-th {
+#tablaCalendario th {
 	border: 1px solid black;
 	text-align: center;
 }
@@ -165,7 +165,8 @@ th {
 .input:focus {
 	box-shadow: 3px 4px 0 black;
 }
-textarea {
+
+#formulario textarea {
 	resize: none;
 }
 #formulario {
@@ -185,7 +186,7 @@ textarea {
 	align-items: center;
 }
 
-label {
+#formulario label {
 	text-align: center;
 	margin-bottom: 5px;
 }
@@ -209,7 +210,7 @@ label {
 
 /* Media Queries para responsividad */
 @media (max-width: 768px) {
-	section#reservas {
+	#reservas {
 		display: flex;
 		flex-direction: column;
 		gap: 10vh;
