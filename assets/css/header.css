@@ -138,6 +138,10 @@ header {
   transform: scale(0.9, 0.9);
 }
 
+#linkk {
+  text-decoration: none;
+  color: black;
+}
 /* MEDIA QUERIES PARA ADAPTAR EL DISEÑO A PANTALLAS MÁS PEQUEÑAS */
 
 @media (max-width: 1024px) {
