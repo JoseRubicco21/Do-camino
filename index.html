@@ -22,38 +22,14 @@
   </head>
   <body>
     <!-- Perol - HEADER -->
-    <header>
-      <div id="header-div-0">
-        <div id="header-div-1">
-          <div id="header-div-dropdown">
-            <div class="cards" class="dropdown-content">
-              <div class="card red">
-                <p class="tip"><a href="#cartas" id="linkHeader">CARTA</a></p>
-              </div>
-              <div class="card blue" id="c">
-                <p class="tip">
-                  <a href="#about-us" id="linkHeader">ABOUT US</a>
-                </p>
-              </div>
-              <div class="card green">
-                <p class="tip">
-                  <a href="#contacto" id="linkHeader">CONTACTO</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div id="header-div-logo">
-            <img
-              src="/assets/images/logo.png"
-              alt="Logo Do Camiño"
-              id="header-img-logo"
-            />
-          </div>
-          <div id="header-div-navbar">
-            <a href="#reservas" id="header-link" class="reserva">RESERVA YA!</a>
-          </div>
-        </div>
-      </div>
+    <header class="header">
+      <img src="/assets/images/logo.png" alt="Logo Do Camiño" class="header-img-logo" />
+      <span class="header-menu" onclick="toggleMenu()">☰</span>
+      <ul class="header-links">
+        <li><a href="#">Carta</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
     </header>
     <main>
       <!-- Gabriel - CARTAS -->
