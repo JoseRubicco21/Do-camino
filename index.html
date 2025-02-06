@@ -51,13 +51,7 @@
       <section id="cartas"></section>
       <!-- Jose - ABOUT US -->
       <section id="about-us">
-        <div class="about-us-img-div" id="about-us-1">
-          <img
-            class="about-us-img"
-            src="./assets/images/restaurant_1.jpg"
-            alt="imagen de uno de los chefs."
-          />
-        </div>
+        <div class="about-us-img" id="about-us-1"></div>
         <article class="about-us-text" id="about-us-2">
           <h2>El Restaurante</h2>
           <p>
@@ -85,13 +79,7 @@
             <li>Zaria Ferro</li>
           </ul>
         </article>
-        <div class="about-us-img-div" id="about-us-4">
-          <img
-            class="about-us-img"
-            src="./assets/images/chef_1.jpg"
-            alt="imagen de uno de los chefs."
-          />
-        </div>
+        <div class="about-us-img" id="about-us-4"></div>
       </section>
       <!-- Brais - RESERVAS -->
       <div id="tablaLeyenda">
@@ -128,8 +116,8 @@
                 <td class="dayPast">2</td>
               </tr>
               <tr>
-                <td class="dayToday">3</td>
-                <td class="dayFull">4</td>
+                <td class="dayPast">3</td>
+                <td class="dayToday">4</td>
                 <td class="dayFull">5</td>
                 <td class="dayFull">6</td>
                 <td class="dayFull">7</td>
@@ -225,7 +213,7 @@
               ></textarea>
             </div>
             <div id="buttonDiv">
-              <button type="button">Enviar Reserva</button>
+              <button type="button" id="buttonForm">Enviar Reserva</button>
             </div>
           </form>
         </aside>
@@ -234,36 +222,46 @@
     <!-- Alexandre - FOOTER -->
     <footer class="footer">
       <div id="footer-container">
-        <div id="footer-1">
-          De conformidad con lo dispuesto en el artículo 10 de la Ley 34/2002,
-          de 11 de julio, de Servicios de Sociedad de la Información y Comercio
-          Electrónico, se informa que https://www.docamino.com es un dominio de
-          Devind, S.L. con CIF: B55153783 y domicilio social en c/Villaviciosa
-          12, 16701 Santiago de Compostela, teléfono 983548134 y mail
-          contact@devind.com.
-        </div>
+        <section id="footer-1" class="footer-section">
+          <p>
+            De conformidad con lo dispuesto en el artículo 10 de la Ley 34/2002,
+            de 11 de julio, de Servicios de Sociedad de la Información y
+            Comercio Electrónico, se informa que
+            <a href="https://www.docamino.com">https://www.docamino.com</a>
+            es un dominio de Devind, S.L. con CIF: B55153783 y domicilio social
+            en c/Villaviciosa 12, 16701 Santiago de Compostela, teléfono
+            <a href="tel:983548134">983548134</a> y mail
+            <a href="mailto:contact@devind.com">contact@devind.com</a>.
+          </p>
+        </section>
+
         <div class="footer-separator"></div>
-        <div id="footer-2">
+
+        <section id="footer-2" class="footer-section">
           <ul class="footer-social-list">
             <li>
-              <a href=""
-                ><i class="fa-brands fa-square-facebook"></i> Facebook</a
-              >
+              <a href="#" aria-label="Seguirnos en Facebook"
+                ><i class="fa-brands fa-square-facebook fa-2x"></i
+              ></a>
             </li>
             <li>
-              <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
+              <a href="#" aria-label="Seguirnos en Instagram"
+                ><i class="fa-brands fa-instagram fa-2x"></i
+              ></a>
             </li>
             <li>
-              <a href=""
-                ><i class="fa-brands fa-square-x-twitter"></i> Twitter</a
-              >
+              <a href="#" aria-label="Seguirnos en Twitter"
+                ><i class="fa-brands fa-square-x-twitter fa-2x"></i
+              ></a>
             </li>
           </ul>
-        </div>
+        </section>
+
         <div class="footer-separator"></div>
-        <div id="footer-3">
-          <a href="">Política de cookies</a>
-        </div>
+
+        <section id="footer-3" class="footer-section">
+          <a href="#">Política de cookies</a>
+        </section>
       </div>
     </footer>
   </body>

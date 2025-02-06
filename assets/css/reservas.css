@@ -107,52 +107,50 @@ th {
 #numGente {
 	width: 50px;
 }
-label {
+#formulario label {
 	font-weight: bold;
 	margin-bottom: 8px;
 }
-/* 
-Código tirado de https://uiverse.io/e-coders/new-shrimp-32 */
-button {
-	appearance: none;
-	background-color: transparent;
-	border: 0.125em solid #1a1a1a;
-	border-radius: 0.9375em;
-	box-sizing: border-box;
-	color: #3b3b3b;
+
+#buttonForm {
+	border: 1px solid black;
+	font-size: x-large;
+	color: #bcb2a8;
+	font-family: inherit;
+	font-weight: 800;
 	cursor: pointer;
-	display: inline-block;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: normal;
-	margin: 0;
-	min-height: 3.75em;
-	min-width: 0;
-	outline: none;
-	padding: 1em 2.3em;
-	text-align: center;
-	text-decoration: none;
-	transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
-	user-select: none;
-	-webkit-user-select: none;
-	touch-action: manipulation;
-	will-change: transform;
+	position: relative;
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-duration: 400ms;
+	transition-property: color;
 }
 
-button:disabled {
+#buttonForm:focus,
+#buttonForm:hover {
+	color: #835139;
+}
+
+#buttonForm:focus:after,
+#buttonFormhover:after {
+	width: 100%;
+	left: 0%;
+}
+
+#buttonForm:after {
+	content: '';
 	pointer-events: none;
-}
-
-button:hover {
-	color: #fff;
-	background-color: #6b533d;
-	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-	transform: translateY(-2px);
-}
-
-button:active {
-	box-shadow: none;
-	transform: translateY(0);
+	bottom: -2px;
+	left: 50%;
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-color: #835139;
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-duration: 400ms;
+	transition-property: width, left;
 }
 
 /*Código tirado de  https://uiverse.io/anniekoop/nasty-impala-89*/
