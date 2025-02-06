@@ -7,12 +7,16 @@
       src="https://kit.fontawesome.com/a7fd78ffdf.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./assets/css/menu.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/about_us.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/reservas.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
-    <script async src="assets/js/reservas.js"></script>
+    
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/reservas.js" defer></script>
+    
     <title>Meson do camiño</title>
   </head>
   <body>
@@ -23,15 +27,13 @@
           <div id="header-div-dropdown">
             <div class="cards" class="dropdown-content">
               <div class="card red">
-                <p class="tip"><a id="linkk" href="#">CARTA</a></p>
+                <p class="tip">CARTA</p>
               </div>
               <div class="card blue" id="c">
-                <p class="tip">
-                  <a id="linkk" href="#footer-container">CONTACTO</a>
-                </p>
+                <p class="tip">CONTACTO</p>
               </div>
               <div class="card green">
-                <p class="tip"><a id="linkk" href="#about-us">ABOUT US</a></p>
+                <p class="tip">ABOUT US</p>
               </div>
             </div>
           </div>
@@ -43,14 +45,102 @@
             />
           </div>
           <div id="header-div-navbar">
-            <a href="#reservas" id="header-link" class="reserva">RESERVA YA!</a>
+            <a href="#" id="header-link" class="reserva">RESERVA YA!</a>
           </div>
         </div>
       </div>
     </header>
     <main>
       <!-- Gabriel - CARTAS -->
-      <section id="cartas"></section>
+      <section class="menu-section">
+        <div class="section-header animate__animated animate__slideInLeft">
+          <p class="slogan">Has recorrido el Camino, ahora saborea cada paso.</p>
+        </div>
+        <hr />
+        <div class="tarjetas-container">
+          <div class="tarjeta animate__animated animate__fadeInUp" id="tarjeta1">
+            <div class="detras">
+              <h3>Menú del Camino de la Plata</h3>
+              <h4>Entrantes</h4>
+              <ul>
+                <li><a href="#">Sardinas a la Parrilla</a></li>
+                <li><a href="#">Piquillos Rellenos</a></li>
+              </ul>
+              <h4>Plato Principal</h4>
+              <ul>
+                <li><a href="#">Bacalao al Pil-Pil</a></li>
+                <li><a href="#">Merluza a la Sidra</a></li>
+              </ul>
+              <h4>Postres</h4>
+              <ul>
+                <li><a href="#">Arroz con Leche</a></li>
+                <li><a href="#">Tarta de Manzana</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="tarjeta animate__animated animate__fadeInTopLeft"
+            id="tarjeta2"
+          >
+            <div class="detras">
+              <h3>Menú del Camino del Norte</h3>
+              <h4>Entrantes</h4>
+              <ul>
+                <li><a href="#">Ensalada Mixta</a></li>
+                <li><a href="#">Sopa de Ajo</a></li>
+              </ul>
+              <h4>Plato Principal</h4>
+              <ul>
+                <li><a href="#">Paella</a></li>
+                <li><a href="#">Pechuga de Pollo</a></li>
+              </ul>
+              <h4>Postres</h4>
+              <ul>
+                <li><a href="#">Tarta de Santiago</a></li>
+                <li><a href="#">Flan Casero</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="tarjeta animate__animated animate__fadeInTopRight"
+            id="tarjeta3"
+          >
+            <div class="detras">
+              <h3>Menú del Camino Portugués</h3>
+              <h4>Entrantes</h4>
+              <ul>
+                <li><a href="#">Bacalhau à Brás</a></li>
+                <li><a href="#">Caldo Verde</a></li>
+              </ul>
+              <h4>Plato Principal</h4>
+              <ul>
+                <li><a href="#">Arroz de Pato</a></li>
+                <li><a href="#">Francesinha</a></li>
+              </ul>
+              <h4>Postres</h4>
+              <ul>
+                <li><a href="#">Pasteis de Nata</a></li>
+                <li><a href="#">Tarta de Chocolate</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="caminar-container">
+          <div class="caminar">
+            <img src="imagenes/steps.png" class="huella" alt="Huellas" id="huella1">
+            <img src="imagenes/steps-reverse.png" class="huella" alt="Huellas" id="huella2">
+            <img src="imagenes/steps.png" class="huella" alt="Huellas" id="huella3">
+            <img src="imagenes/steps-reverse.png" class="huella" alt="Huellas" id="huella4">
+            <img src="imagenes/steps.png" class="huella" alt="Huellas" id="huella5">
+            <img src="imagenes/steps-reverse.png" class="huella" alt="Huellas" id="huella6">
+            <img src="imagenes/steps.png" class="huella" alt="Huellas" id="huella7">
+            <img src="imagenes/steps-reverse.png" class="huella" alt="Huellas" id="huella8">
+            <img src="imagenes/steps.png" class="huella" alt="Huellas" id="huella9">
+            <img src="imagenes/steps-reverse.png" class="huella" alt="Huellas" id="huella10">
+            <img src="imagenes/steps.png" class="huella" alt="Huellas" id="huella11">
+          </div>
+        </div>
+      </section>
       <!-- Jose - ABOUT US -->
       <section id="about-us">
         <div class="about-us-img" id="about-us-1"></div>
