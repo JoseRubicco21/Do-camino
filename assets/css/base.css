@@ -1,29 +1,29 @@
-:root{
- /*
+:root {
+  /*
  Definición de variables reutilizables
  se utilizan tal que:
     propiedad : var(--text-dark)
  
  */
- --text-dark: #000;
- --text-light: #fff;
- --background-light: #F8F4EF;
- --background-dark: #bcb2a8;
- --accent-light: #6B533D;
- --accent-dark: #392318;
+  --text-dark: #000;
+  --text-light: #fff;
+  --background-light: #f8f4ef;
+  --background-dark: #bcb2a8;
+  --accent-light: #6b533d;
+  --accent-dark: #392318;
 }
 
-/* FUENTES */ 
+/* FUENTES */
 /* ------- */
 /* ------- */
 /* ------- */
 
 /* RUBIK */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 /* Doc: https://fonts.google.com/specimen/Rubik */
 
 /* NUNITO SANS */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 /* Doc: https://fonts.google.com/specimen/Nunito+Sans*/
 
 /*
@@ -31,12 +31,14 @@
  Si no utilizar el body como selector css
 */
 main {
-    background-color: var(--background-light);
+  background-color: var(--background-light);
 }
 
 body {
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
