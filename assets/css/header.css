@@ -142,6 +142,10 @@ header {
   text-decoration: none;
   color: black;
 }
+
+#linkk:hover {
+  color: white;
+}
 /* MEDIA QUERIES PARA ADAPTAR EL DISEÑO A PANTALLAS MÁS PEQUEÑAS */
 
 @media (max-width: 1024px) {
