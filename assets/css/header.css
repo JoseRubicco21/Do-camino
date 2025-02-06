@@ -130,12 +130,12 @@ header {
   transform: scale(0.9, 0.9);
 }
 
-#linkk {
+#linkHeader {
   text-decoration: none;
   color: black;
 }
 
-#linkk:hover {
+#linkHeader:hover {
   color: white;
 }
 /* MEDIA QUERIES PARA ADAPTAR EL DISEÑO A PANTALLAS MÁS PEQUEÑAS */
