@@ -29,6 +29,7 @@ header {
   width: 90%;
   height: 80%;
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 #header-div-navbar,
@@ -71,10 +72,12 @@ header {
 
 #header-link:hover {
   color: white;
+  border: 1px solid white;
 }
 
 .reserva {
   border: 1px solid black;
+  border-radius: 10px;
   font-size: x-large;
   color: #e1e1e1;
   font-family: inherit;
