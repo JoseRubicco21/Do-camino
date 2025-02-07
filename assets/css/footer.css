@@ -1,5 +1,7 @@
 /* CSS - FOOTER */
 .footer {
+    height: 10%;
+    width: 100%;
     font-size: 1rem;
     background-color: var(--background-dark);
     padding: 1rem;

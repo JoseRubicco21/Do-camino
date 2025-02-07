@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tarjeta.addEventListener('mouseenter', () => {
       // Verificar si el tamaño de pantalla es mayor a 768px
       if (window.innerWidth > 768) {
-        tarjeta.style.transform = 'scale(1.1)'; // Aumentar el tamaño
+        tarjeta.style.transform = 'scale(1)'; // Aumentar el tamaño
       }
     });
 
