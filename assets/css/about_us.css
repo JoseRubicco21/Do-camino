@@ -1,7 +1,31 @@
 /* CSS - ABOUT US */
-/* -------------- */
-/* -------------- */
-/* -------------- */
+
+.fade-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out; /* Smooth crossfade */
+}
+
+#about-us-4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 #about-us {
   display: grid;
@@ -11,44 +35,76 @@
   grid-row-gap: 20px;
   margin: 5% 10%;
   background-color: var(--background-light);
+  font-family: Rubik;
+}
+
+#about-us h2 {
+  font-size: 2rem;
 }
 
 #about-us-1 {
-  grid-area: 1 / 1 / 1 / 3;
-  background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(57,35,24,0.1023984593837535) 30%), url(../images/restaurant_1.jpg);
-  
+  grid-area: 1 / 1 / 2 / 3;
+  background-size: cover;
+  background-position: center;
 }
 #about-us-2 {
   grid-area: 1 / 3 / 2 / 3;
 }
 #about-us-3 {
-  grid-area: 2 / 1 / 3 / 2;
+  grid-area: 2 / 1 / 2 / 3;
 }
 #about-us-4 {
-  grid-area: 2 / 2 / 3 / 4;
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(57,35,24,0.1023984593837535) 30%), url(../images/chef_2.jpg);
-  background-size: cover;
+  grid-area: 2 / 3 / 2 / 4;
 }
 
 #about-us-2,
-#about-us-3 {
+#about-us-3,
+#about-us-1,
+#about-us-4 {
   background-color: var(--background-dark);
   color: var(--text-light);
+  background-image: linear-gradient(210deg, rgba(0, 0, 0, 0.1), var(--accent-light) 400%);
 }
 
 .about-us-img,
 .about-us-text {
-   padding: 10px;
+  padding: 10px;
   height: calc(100vw / 4);
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
-  #about-us  {
-    display: flex;
-    flex-direction: column;
+  #about-us {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: repeat(4, 1fr); /* Each section gets an equal height */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin: 5% 10%;
+    background-color: var(--background-light);
   }
+
+  #about-us-1 {
+    grid-area: 1 / 1 / 2 / 2; /* Adjusted to flow naturally in single column */
+    background-size: cover; /* Use cover for background images */
+    background-position: center;
+  }
+
+  #about-us-2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  #about-us-3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  #about-us-4 {
+    grid-area: 4 / 1 / 5 / 2; /* Adjusted to fit in the mobile layout */
+    background-size: cover;
+    background-position: center;
+  }
+
   .about-us-img,
   .about-us-text {
     padding: 10px;
@@ -56,7 +112,4 @@
     max-height: 1024px;
   }
 
-  .about-us-img {
-    height: 256px;
-  }
 }

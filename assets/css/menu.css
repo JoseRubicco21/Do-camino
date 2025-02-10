@@ -1,5 +1,7 @@
+/* CSS - MENU AND STEPS EFFECT */
+
 .menu-section {
-  width: 80%;
+  width: 100%;
   height: auto;
   background-color: #f8f4ef;
   /* display: flex; */
@@ -8,7 +10,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* padding-top: 10%; */
+  padding-top: 8%;
+}
+.slogan{
+  margin-bottom: 0px;
+  font-family: Rubik;
 }
 
 .section-header {
@@ -31,12 +37,14 @@
 
 /* Contenedor general de la tarjeta */
 .tarjeta {
-  width: 325px; /* Aumento proporcional de 250px a 325px */
-  height: 455px; /* Aumento proporcional de 350px a 455px */
+  width: 325px;
+  height: 455px; 
   perspective: 1000px;
   position: relative;
   animation-fill-mode: forwards;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: Rubik;
+  
 }
 
 .animate__animated.animate__fadeInUp {
@@ -47,7 +55,11 @@
 .tarjeta:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -3px 1px 41px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 1px 41px 1px rgba(0,0,0,0.75);
+box-shadow: -3px 1px 41px 1px rgba(0,0,0,0.75);
 }
+
 
 @keyframes fadeInUpCustom {
   0% {
@@ -107,12 +119,12 @@
   position: absolute;
   backface-visibility: hidden;
   transform: rotateY(180deg);
-  padding-left: 15px;
-  padding-right: 0px;
   text-align: left;
-  background-color: #333;
+  background-color: var(--accent-dark);
   color: white;
   border-radius: 10px;
+  padding: 25px;
+
   
 }
 
@@ -149,8 +161,11 @@
   color: #ffcc00;
 }
 
-/* Media Queries para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .menu-section {
+    width: 90%;
+  }
+
   .tarjetas-container {
     flex-direction: column; /* Cambiar de fila a columna */
     align-items: center; /* Centrar las tarjetas */
@@ -161,34 +176,26 @@
     width: 200px;
     height: 300px;
   }
+  .detras {
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    overflow: scroll;
+  }
 
   .section-header {
     font-size: 6vw; /* Ajustar tamaño de fuente para móviles */
   }
 }
 
-@media (max-width: 480px) {
-  .tarjetas-container {
-    gap: 10px; /* Reducir espacio entre tarjetas */
-  }
-
-  .tarjeta {
-    width: 180px;
-    height: 270px;
-  }
-
-  .section-header {
-    font-size: 7vw; /* Ajustar aún más el tamaño para pantallas muy pequeñas */
-  }
-}
-
 .caminar-container {
   position: relative;
   width: 100%;
-  height: 10%;
+  height: 70px;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .caminar {

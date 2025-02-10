@@ -1,21 +1,19 @@
 /* CSS - FOOTER */
-.footer {
-    height: 10%;
-    width: 100%;
+
+.footer { 
     font-size: 1rem;
     background-color: var(--background-dark);
     padding: 1rem;
     text-align: center;
     position: relative;
-    bottom: 0;
+    font-family: "Rubik", sans-serif;
 }
 
 #footer-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     color: var(--text-light);
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 #footer-container a {
@@ -38,10 +36,6 @@
     text-align: justify;
 }
 
-#footer-2 {
-    text-align: center;
-}
-
 .footer-separator {
     width: 0.05rem;
     height: 6rem;
@@ -54,6 +48,7 @@
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -73,8 +68,6 @@
 @media screen and (max-width: 1024px) {
     #footer-container {
         flex-direction: column;
-        height: auto;
-        text-align: center;
     }
 
     .footer-section {

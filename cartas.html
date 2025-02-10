@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="assets/css/about_us.css" />
     <link rel="stylesheet" href="assets/css/reservas.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
 
     <script src="assets/js/preloader.js" defer></script>
@@ -27,13 +30,13 @@
   </head>
   <body>
     <!-- Loader -->
-    <div id="preloader">
+    <!-- <div id="preloader">
       <div class="counter">
           <span id="count">0</span>
           <p>Peregrinos en 2024</p>
       </div>
-  </div>
-  <div id="content" class="hidden">
+  </div> -->
+  <div id="content" >
     <!-- Perol - HEADER -->
     <header class="header" id="header">
       <a href="#top"><img src="assets/images/logo.png" alt="Logo Do Camiño" class="header-img-logo" /></a>
@@ -195,178 +198,11 @@
         </div>
       </section>
       <!-- Jose - ABOUT US -->
-      <section id="about-us">
-        <div class="about-us-img" id="about-us-1"></div>
-        <article class="about-us-text" id="about-us-2">
-          <h2>El Restaurante</h2>
-          <p>
-            El Mesón do camiño inció con la simple idea "Si tanto se recorre a
-            pie, ¿Por qué no recorrerlo con la boca?" Así se decidió emprender
-            un restaurante que recorra gastronómicamente los caminos que llevan
-            a nuestro querido Santiago.
-          </p>
-          <p>
-            Contamos con diferentes que te llevarán por una experiencia de
-            sabores única, contando con los platos más famosos de la geografia
-            que cruzan los peregrinos de cada camino es perfecto para
-            experimentar aquellos caminos que aún no se han recorrido.
-          </p>
-        </article>
-        <article class="about-us-text" id="about-us-3">
-          <h2>El equipo</h2>
-          <p>
-            Los mejores cocineros de santiagos que tambíen han recorrido el
-            camino
-          </p>
-          <ul>
-            <li>Pepe Linares</li>
-            <li>Juan Carlos de la rosa</li>
-            <li>Zaria Ferro</li>
-          </ul>
-        </article>
-        <div class="fade-container about-us-img" id="about-us-4"></div>
-      </section>
-      <!-- Brais - RESERVAS -->
-      <div id="tablaLeyenda">
-        <ul>
-          <li id="leyendaClosed">Cerrado</li>
-          <li id="leyendaFull">Completo</li>
-          <li id="leyendaAvaliable">Disponible</li>
-        </ul>
+       <main>
+      <div class="container mx-auto" id="containerBootstrap">
+       
+
       </div>
-      <section id="reservas">
-        <aside id="calendario">
-          <table id="tablaCalendario">
-            <caption id="tituloTabla">
-              <i class="fa-solid fa-caret-left"></i
-              >Febrero 2025<i class="fa-solid fa-caret-right"></i>
-            </caption>
-            <thead>
-              <th>L</th>
-              <th>M</th>
-              <th>Mi</th>
-              <th>J</th>
-              <th>V</th>
-              <th>S</th>
-              <th>D</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="dayPast">1</td>
-                <td class="dayPast">2</td>
-              </tr>
-              <tr>
-                <td class="dayPast">3</td>
-                <td class="dayPast">4</td>
-                <td class="dayPast">5</td>
-                <td class="dayPast">6</td>
-                <td class="dayPast">7</td>
-                <td class="dayClosed">8</td>
-                <td class="dayClosed">9</td>
-              </tr>
-              <tr>
-                <td class="dayPast">10</td>
-                <td class="dayPast">11</td>
-                <td class="dayPast">12</td>
-                <td class="dayPast">13</td>
-                <td class="dayPast">14</td>
-                <td class="dayClosed">15</td>
-                <td class="dayClosed">16</td>
-              </tr>
-              <tr>
-                <td class="dayToday">17</td>
-                <td class="dayFull">18</td>
-                <td class="dayAvaliable">19</td>
-                <td class="dayAvaliable">20</td>
-                <td class="dayFull">21</td>
-                <td class="dayClosed">22</td>
-                <td class="dayClosed">23</td>
-              </tr>
-              <tr>
-                <td class="dayFull">24</td>
-                <td class="dayFull">25</td>
-                <td class="dayAvaliable">26</td>
-                <td class="dayAvaliable">27</td>
-                <td class="dayAvaliable">28</td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </aside>
-        <aside id="formulario">
-          <form action="/">
-            <div id="dataHoraDiv">
-              <label for="dataSeleccionada">Data Seleccionada</label>
-              <br />
-              <input
-                class="input"
-                type="text"
-                id="dataSeleccionada"
-                name="dataSeleccionada"
-                aria-label="Muestra la hora seleccionada"
-                disabled
-              />
-
-              <label for="horaReserva">Hora</label>
-              <br />
-              <select id="horaReserva" name="horaReserva" class="input" aria-label="Seleccion de hora">
-                <option value="13:00">13:00</option>
-                <option value="14:00">14:00</option>
-                <option value="15:00">15:00</option>
-                <option value="20:00">20:00</option>
-                <option value="21:00">21:00</option>
-                <option value="22:00">22:00</option>
-                <option value="23:00">23:00</option>
-              </select>
-            </div>
-            <div id="correoNumeroDiv">
-              <label for="email">Correo electrónico:</label>
-              <br />
-              <input
-                class="input"
-                type="email"
-                id="email"
-                name="email"
-                aria-label="Input de email"
-                required
-              />
-
-              <label for="numGente">Número de personas:</label>
-              <br />
-              <input
-                class="input"
-                type="number"
-                id="numGente"
-                name="numGente"
-                min="1"
-                max="10"
-                aria-label="Input de Numero de Gente que asiste"
-                required
-              />
-            </div>
-            <div id="comentarioDiv">
-              <label for="comentario">Comentarios adicionales:</label><br />
-              <textarea
-                class="input"
-                id="comentario"
-                name="comentario"
-                rows="4"
-                cols="20"
-                aria-label="Comentarios extra"
-              ></textarea>
-            </div>
-            <div id="buttonDiv">
-              <button type="button" id="buttonForm">Enviar Reserva</button>
-            </div>
-          </form>
-        </aside>
-      </section>
     </main>
     <!-- Alexandre - FOOTER -->
     <footer class="footer" id="contacto">
