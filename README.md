@@ -1,6 +1,6 @@
 # Introducción
 
-Página web para el restaurante ficticio "Meson do camiño"
+Página web para el restaurante ficticio "Do camiño"
 
 # Instalación
 

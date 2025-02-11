@@ -1,10 +1,10 @@
 {
-  "name": "meson-do-camino",
+  "name": "do-camino",
   "version": "1.0.0",
-  "description": "Página web para el restaurante mesón de camino",
+  "description": "Página web para el restaurante Do Camino",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Bienvenido al meson\""
+    "test": "echo \"Bienvenido\""
   },
   "author": "",
   "license": "MIT",

@@ -10,9 +10,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 8%;
+  padding-top: 5%;
 }
 .slogan{
+  font-size: 2rem;
   margin-bottom: 0px;
   font-family: Rubik;
 }
@@ -128,6 +129,10 @@ box-shadow: -3px 1px 41px 1px rgba(0,0,0,0.75);
   
 }
 
+.hidden{
+  display: none !important;
+}
+
 .tarjeta.flipped .frente {
   transform: rotateY(180deg);
 }
@@ -159,6 +164,15 @@ box-shadow: -3px 1px 41px 1px rgba(0,0,0,0.75);
 
 .detras ul li a:hover {
   color: #ffcc00;
+}
+
+#linksCarta {
+  text-decoration: none;
+  color: white;
+}
+
+#linksCarta:hover {
+  color: #bcb2a8
 }
 
 @media (max-width: 1024px) {

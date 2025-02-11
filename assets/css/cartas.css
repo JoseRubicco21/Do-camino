@@ -1,0 +1,6 @@
+.card-title{
+  font-family: Rubik;
+}
+.card-body{
+  background-color: var(--background-dark);
+}

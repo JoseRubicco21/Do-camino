@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/about_us.css" />
     <link rel="stylesheet" href="assets/css/reservas.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/cartas.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -26,7 +27,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Meson do camiño</title>
+    <title>Do Camiño</title>
   </head>
   <body>
     <!-- Loader -->
@@ -39,170 +40,140 @@
   <div id="content" >
     <!-- Perol - HEADER -->
     <header class="header" id="header">
-      <a href="#top"><img src="assets/images/logo.png" alt="Logo Do Camiño" class="header-img-logo" /></a>
+     <img src="assets/images/logo.png" alt="Logo Do Camiño" class="header-img-logo" />
       <span class="header-menu" onclick="toggleMenu()">☰</span>
       <ul class="header-links">
-        <li><a href="#cartas">CARTA</a></li>
-        <li><a href="#about-us">ABOUT US</a></li>
-        <li><a href="#contacto">CONTACTO</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#about-us">ABOUT US</a></li>
+        <li><a href="index.html#contacto">CONTACTO</a></li>
       </ul>
     </header>
+<!-- CARTAS CON BOOTSTRAP -->
+
     <main>
-      <!-- Gabriel - CARTAS -->
-      <section class="menu-section" id="cartas">
-        <div class="section-header animate__animated animate__slideInLeft">
-          <p class="slogan">
-            Has recorrido el Camino, ahora saborea cada paso.
-          </p>
-        </div>
-        <div class="caminar-container">
-          <div class="caminar">
-            <img
-              src="/Do-camino/assets/images/steps.png"
-              class="huella"
-              alt="Huellas"
-              id="huella1"
-            />
-            <img
-              src="/Do-camino/assets/images/steps-reverse.png"
-              class="huella"
-              alt="Huellas"
-              id="huella2"
-            />
-            <img
-              src="/Do-camino/assets/images/steps.png"
-              class="huella"
-              alt="Huellas"
-              id="huella3"
-            />
-            <img
-              src="/Do-camino/assets/images/steps-reverse.png"
-              class="huella"
-              alt="Huellas"
-              id="huella4"
-            />
-            <img
-              src="/Do-camino/assets/images/steps.png"
-              class="huella"
-              alt="Huellas"
-              id="huella5"
-            />
-            <img
-              src="/Do-camino/assets/images/steps-reverse.png"
-              class="huella"
-              alt="Huellas"
-              id="huella6"
-            />
-            <img
-              src="/Do-camino/assets/images/steps.png"
-              class="huella"
-              alt="Huellas"
-              id="huella7"
-            />
-            <img
-              src="/Do-camino/assets/images/steps-reverse.png"
-              class="huella"
-              alt="Huellas"
-              id="huella8"
-            />
-            <img
-              src="/Do-camino/assets/images/steps.png"
-              class="huella"
-              alt="Huellas"
-              id="huella9"
-            />
-            <img
-              src="/Do-camino/assets/images/steps-reverse.png"
-              class="huella"
-              alt="Huellas"
-              id="huella10"
-            />
-            <img
-              src="/Do-camino/assets/images/steps.png"
-              class="huella"
-              alt="Huellas"
-              id="huella11"
-            />
-          </div>
-        </div>
-        <div class="tarjetas-container">
-          <div
-            class="tarjeta animate__animated animate__fadeInUp"
-            id="tarjeta1"
-          >
-            <div class="detras">
-              <h3>Menú del Camino de la Plata</h3>
-              <h4>Entrantes</h4>
-              <ul>
-                <li><a href="#">Sardinas a la Parrilla</a></li>
-                <li><a href="#">Migas extremeñas (Extremadura)</a></li>
-              </ul>
-              <h4>Plato Principal</h4>
-              <ul>
-                <li><a href="#">Pulpo a la gallega (Galicia)</a></li>
-                <li><a href="#">Merluza a la Sidra</a></li>
-              </ul>
-              <h4>Postres</h4>
-              <ul>
-                <li><a href="#">Arroz con Leche</a></li>
-                <li><a href="#">Piononos de Santa Fe (Andalucía)</a></li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="tarjeta animate__animated animate__fadeInTopLeft"
-            id="tarjeta2"
-          >
-            <div class="detras">
-              <h3>Menú del Camino del Norte</h3>
-              <h4>Entrantes</h4>
-              <ul>
-                <li><a href="#">Fabada asturiana</a></li>
-                <li><a href="#">Sopa de Ajo</a></li>
-              </ul>
-              <h4>Plato Principal</h4>
-              <ul>
-                <li><a href="#">Paella</a></li>
-                <li><a href="#">Pechuga de Pollo</a></li>
-              </ul>
-              <h4>Postres</h4>
-              <ul>
-                <li><a href="#">Tarta de Santiago</a></li>
-                <li><a href="#">Pantxineta</a></li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="tarjeta animate__animated animate__fadeInTopRight"
-            id="tarjeta3"
-          >
-            <div class="detras">
-              <h3>Menú del Camino Portugués</h3>
-              <h4>Entrantes</h4>
-              <ul>
-                <li><a href="#">Bacalhau à Brás</a></li>
-                <li><a href="#">Caldo Verde</a></li>
-              </ul>
-              <h4>Plato Principal</h4>
-              <ul>
-                <li><a href="#">Arroz de marisco</a></li>
-                <li><a href="#">Francesinha</a></li>
-              </ul>
-              <h4>Postres</h4>
-              <ul>
-                <li><a href="#">Pasteis de Nata</a></li>
-                <li><a href="#">Tarta de almendra</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Jose - ABOUT US -->
-       <main>
-      <div class="container mx-auto" id="containerBootstrap">
-       
+
+      <hr> 
+           
+
+      <div class="accordion accordion-flush" id="accordionFlushExample"></div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Menu 1 
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="container mx-auto">
+<p class="h1 text-center">Cartas</p>
+
 
       </div>
+     <hr>
+     <p class="h1 text-center" id="menu1">Camiño da Prata</p>
+
+       <main>
+      <div class="container mx-auto d-sm-flex flex-row mb-2 justify-content-evenly" >
+
+
+      <div class="card" style="width: 18rem;">
+  <img src="assets/images/carta/menu1/pulpo.jpg" class="card-img-top" alt="Imagen principal primer menú">
+  <div class="card-body">
+    <h5 class="card-title">Pulpo á feira</h5>
+    <p class="card-text">Delicioso plato gallego de pulpo con pimientón</p>
+    <hr class="border border-danger border-2 opacity-50">
+    <i class="fa-solid fa-shrimp"></i> 
+    
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="assets/images/menu/menu1-2.jpg" class="card-img-top" alt="Imagen postre primer menú" height="400" width="400">
+  <div class="card-body">
+    <h5 class="card-title">Pionono de Santa Fe</h5>
+    <p class="card-text">Postre andaluz relleno de crema que endulzará su estancia</p>
+    <hr class="border border-danger border-2 opacity-50">
+<i class="fa-solid fa-wheat-awn-circle-exclamation"></i>    <i class="fa-solid fa-egg"></i><i class="fa-solid fa-cow"></i>
+  </div>
+</div>
+      </div></div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Menu 2
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><p class="h1 text-center" id="menu2">Camiño do Norte</p>
+
+<div class="container mx-auto d-sm-flex flex-row mb-2 justify-content-evenly" >
+
+
+      <div class="card" style="width: 18rem;">
+  <img src="assets/images/carta/menu2/fabada-asturiana.jpg" class="card-img-top" alt="Imagen principal segundo menú">
+  <div class="card-body">
+    <h5 class="card-title">Fabada Asturiana</h5>
+    <p class="card-text">Potente plato norteño cargado de energías</p>
+    <hr class="border border-danger border-2 opacity-50">
+<i class="fa-solid fa-cow"></i>    
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="assets/images/menu/menu2-1.jpg" class="card-img-top" alt="Imagen postre segundo menú">
+  <div class="card-body">
+    <h5 class="card-title">Pantxineta</h5>
+    <p class="card-text">Tarta vasca de hojaldre y crema: dulce y redonda</p>
+    <hr class="border border-danger border-2 opacity-50">
+    <i class="fa-solid fa-cow"></i>    
+<i class="fa-solid fa-wheat-awn-circle-exclamation"></i>    <i class="fa-solid fa-egg"></i>
+  </div>
+</div>
+      </div></div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Menu 3
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><p class="h1 text-center" id="menu3">Camiño Portugués</p >
+
+<div class="container mx-auto d-sm-flex flex-row mb-2 justify-content-evenly" >
+
+
+      <div class="card" style="width: 18rem;">
+  <img src="assets/images/menu/menu3-1.jpg" class="card-img-top" alt="Imagen principal tercer menú">
+  <div class="card-body">
+    <h5 class="card-title">Arroz de Marisco</h5>
+    <p class="card-text">Plato con el mejor marisco de la costa portuguesa</p>
+    <hr class="border border-danger border-2 opacity-50">
+        <i class="fa-solid fa-shrimp"></i> 
+
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="assets/images/menu/menu3-2.jpg" class="card-img-top" alt="Imagen postre tercer menú">
+  <div class="card-body">
+    <h5 class="card-title">Tarta de Almendra</h5>
+    <p class="card-text">Tarta portuguesa de almendra molida, azúcar y huevo</p>
+    <hr class="border border-danger border-2 opacity-50">
+    <i class="fa-solid fa-cow"></i>    
+<i class="fa-solid fa-wheat-awn-circle-exclamation"></i>    <i class="fa-solid fa-egg"></i>
+<i class="fa-solid fa-peanut"></i>
+  </div>
+</div>
+      </div></div>
+    </div>
+  </div>
+</div>
+<hr>
+    
+
     </main>
     <!-- Alexandre - FOOTER -->
     <footer class="footer" id="contacto">

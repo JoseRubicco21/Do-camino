@@ -23,11 +23,11 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Meson do camiño</title>
+    <title>Do Camiño</title>
   </head>
   <body>
     <!-- Loader -->
-    <div id="preloader">
+    <div id="preloader" class="hidden">
       <div class="counter">
           <span id="count">0</span>
           <p>Peregrinos en 2024</p>
@@ -39,7 +39,7 @@
       <a href="#top"><img src="assets/images/logo.png" alt="Logo Do Camiño" class="header-img-logo" /></a>
       <span class="header-menu" onclick="toggleMenu()">☰</span>
       <ul class="header-links">
-        <li><a href="#cartas">CARTA</a></li>
+        <li><a href="cartas.html">CARTA</a></li>
         <li><a href="#about-us">ABOUT US</a></li>
         <li><a href="#contacto">CONTACTO</a></li>
       </ul>
@@ -55,67 +55,67 @@
         <div class="caminar-container">
           <div class="caminar">
             <img
-              src="/Do-camino/assets/images/steps.png"
+              src="/assets/images/steps.png"
               class="huella"
               alt="Huellas"
               id="huella1"
             />
             <img
-              src="/Do-camino/assets/images/steps-reverse.png"
+              src="/assets/images/steps-reverse.png"
               class="huella"
               alt="Huellas"
               id="huella2"
             />
             <img
-              src="/Do-camino/assets/images/steps.png"
+              src="/assets/images/steps.png"
               class="huella"
               alt="Huellas"
               id="huella3"
             />
             <img
-              src="/Do-camino/assets/images/steps-reverse.png"
+              src="/assets/images/steps-reverse.png"
               class="huella"
               alt="Huellas"
               id="huella4"
             />
             <img
-              src="/Do-camino/assets/images/steps.png"
+              src="/assets/images/steps.png"
               class="huella"
               alt="Huellas"
               id="huella5"
             />
             <img
-              src="/Do-camino/assets/images/steps-reverse.png"
+              src="/assets/images/steps-reverse.png"
               class="huella"
               alt="Huellas"
               id="huella6"
             />
             <img
-              src="/Do-camino/assets/images/steps.png"
+              src="/assets/images/steps.png"
               class="huella"
               alt="Huellas"
               id="huella7"
             />
             <img
-              src="/Do-camino/assets/images/steps-reverse.png"
+              src="/assets/images/steps-reverse.png"
               class="huella"
               alt="Huellas"
               id="huella8"
             />
             <img
-              src="/Do-camino/assets/images/steps.png"
+              src="/assets/images/steps.png"
               class="huella"
               alt="Huellas"
               id="huella9"
             />
             <img
-              src="/Do-camino/assets/images/steps-reverse.png"
+              src="/assets/images/steps-reverse.png"
               class="huella"
               alt="Huellas"
               id="huella10"
             />
             <img
-              src="/Do-camino/assets/images/steps.png"
+              src="/assets/images/steps.png"
               class="huella"
               alt="Huellas"
               id="huella11"
@@ -144,6 +144,8 @@
                 <li><a href="#">Arroz con Leche</a></li>
                 <li><a href="#">Piononos de Santa Fe (Andalucía)</a></li>
               </ul>
+              <br>
+              <a id="linksCarta" href="cartas.html#menu1">VER MENÚ</a>
             </div>
           </div>
           <div
@@ -167,6 +169,8 @@
                 <li><a href="#">Tarta de Santiago</a></li>
                 <li><a href="#">Pantxineta</a></li>
               </ul>
+              <br>
+              <a id="linksCarta" href="/cartas.html#menu2">VER MENÚ</a>
             </div>
           </div>
           <div
@@ -190,6 +194,8 @@
                 <li><a href="#">Pasteis de Nata</a></li>
                 <li><a href="#">Tarta de almendra</a></li>
               </ul>
+              <br>
+              <a id="linksCarta" href="/cartas.html#menu3">VER MENÚ</a>
             </div>
           </div>
         </div>
@@ -200,29 +206,21 @@
         <article class="about-us-text" id="about-us-2">
           <h2>El Restaurante</h2>
           <p>
-            El Mesón do camiño inció con la simple idea "Si tanto se recorre a
-            pie, ¿Por qué no recorrerlo con la boca?" Así se decidió emprender
-            un restaurante que recorra gastronómicamente los caminos que llevan
-            a nuestro querido Santiago.
+            Do Camiño nació de una idea simple pero profunda: 'Si tantos recorren el camino a pie, ¿por qué no recorrerlo a través del gusto?' Con esta premisa, decidimos crear un restaurante que viaje gastronómicamente por los caminos que conducen a la venerada Santiago de Compostela, ofreciendo una experiencia única para los sentidos.
           </p>
           <p>
-            Contamos con diferentes que te llevarán por una experiencia de
-            sabores única, contando con los platos más famosos de la geografia
-            que cruzan los peregrinos de cada camino es perfecto para
-            experimentar aquellos caminos que aún no se han recorrido.
+            Contamos con una variedad de menús diseñados para brindarte una experiencia gastronómica única, que te llevará a descubrir los sabores más representativos de las regiones recorridas por los peregrinos en sus distintos caminos. Cada plato es una invitación a explorar rutas aún no transitadas, donde podrás vivir la esencia de cada destino a través de sus sabores más emblemáticos.
           </p>
         </article>
         <article class="about-us-text" id="about-us-3">
           <h2>El equipo</h2>
           <p>
-            Los mejores cocineros de santiagos que tambíen han recorrido el
-            camino
+            Los mejores cocineros de Santiago que tambíen han recorrido el
+            camino.
           </p>
-          <ul>
-            <li>Pepe Linares</li>
-            <li>Juan Carlos de la rosa</li>
-            <li>Zaria Ferro</li>
-          </ul>
+          <div id="chefInfo" class=".fade-container">
+
+          </div>
         </article>
         <div class="fade-container about-us-img" id="about-us-4"></div>
       </section>
