@@ -110,16 +110,6 @@
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Fade-In CSS Class */
-.fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* Fade in effect */
-}
-
-/* Show Class to trigger the fade-in */
-.fade-in.show {
-  opacity: 1;
-}
 
 @media (max-width: 1024px) {
   .about-us-text {

@@ -11,7 +11,7 @@ const restaurant = [
     "./assets/images/restaurant_2.jpg",
     "./assets/images/restaurant_3.jpg",
 ];
-
+//TODO
 // Syncs the time between the images and the content of the page.
 const chefTimeSync = 3000;
 
@@ -42,91 +42,126 @@ const chefsInfo = [
     }
 ];
 
-let currentChefIndex = 0;
 
-function displayChefInfo() {
-    const chefInfoElement = document.getElementById('chefInfo');
-    
-    // Remove the previous chef info (without clearing the entire HTML)
-    while (chefInfoElement.firstChild) {
-      chefInfoElement.removeChild(chefInfoElement.firstChild);
-    }
-    
-    const chef = chefsInfo[currentChefIndex];
-    
-    // Create the h2 (chef's name) outside of the flex container
-    const name = document.createElement('h2');
-    name.textContent = chef.name;
-    name.classList.add('fade-in');
-    chefInfoElement.appendChild(name); // Append it directly to the chefInfoElement
-    
-    // Create a container for the chef info using flexbox layout (left side and right side)
-    const container = document.createElement('div');
-    container.style.display = 'flex';
-    container.style.justifyContent = 'space-between'; // Spread out the content
-    container.style.alignItems = 'flex-start'; // Align items to the top
-    
-    // Create the left side for the chef details (origin, year, specialty, dish)
-    const leftSide = document.createElement('div');
-    leftSide.style.flex = '1'; // Allow it to take up available space
+let currentChefIndex = 0;
+let isFirstLoad = true;  // Track if it's the first load
+
+// Function to create the chef info elements
+function createChefInfoElement(chef) {
+  const chefInfoElement = document.getElementById('chefInfo');
   
-    const origin = document.createElement('p');
-    origin.textContent = `Origen: ${chef.origin}`;
-    origin.classList.add('fade-in');
-    leftSide.appendChild(origin);
+  const name = document.createElement('h2');
+  name.textContent = chef.name;
+  name.classList.add('animate__animated', 'animate__slideInLeft'); // Add slideInLeft animation
   
-    const yearOfSantiago = document.createElement('p');
-    yearOfSantiago.textContent = `Año en el que hizo el camino: ${chef.yearOfSantiago}`;
-    yearOfSantiago.classList.add('fade-in');
-    leftSide.appendChild(yearOfSantiago);
+  // Create a container for the chef info using flexbox layout (left side and right side)
+  const container = document.createElement('div');
+  container.style.display = 'flex';
+  container.style.justifyContent = 'space-between'; // Spread out the content
+  container.style.alignItems = 'flex-start'; // Align items to the top
   
-    const specialty = document.createElement('p');
-    specialty.textContent = `Especialidad: ${chef.specialty}`;
-    specialty.classList.add('fade-in');
-    leftSide.appendChild(specialty);
+  const leftSide = document.createElement('div');
+  leftSide.style.flex = '1'; // Allow it to take up available space
   
-    const dish = document.createElement('p');
-    dish.textContent = `Plato Famoso: ${chef.dish}`;
-    dish.classList.add('fade-in');
-    leftSide.appendChild(dish);
-    
-    // Create the right side for the chef's story
-    const rightSide = document.createElement('div');
-    rightSide.style.flex = '0 1 40%'; // Fix width of right side to 40%
+  const origin = document.createElement('p');
+  origin.textContent = `Origen: ${chef.origin}`;
+  origin.classList.add('animate__animated', 'animate__slideInLeft');
+  leftSide.appendChild(origin);
   
-    const story = document.createElement('p');
-    story.textContent = chef.story;
-    story.classList.add('fade-in');
-    rightSide.appendChild(story);
+  const yearOfSantiago = document.createElement('p');
+  yearOfSantiago.textContent = `Año en el que hizo el camino: ${chef.yearOfSantiago}`;
+  yearOfSantiago.classList.add('animate__animated', 'animate__slideInLeft');
+  leftSide.appendChild(yearOfSantiago);
   
-    // Append the left and right side containers to the main container
-    container.appendChild(leftSide);
-    container.appendChild(rightSide);
+  const specialty = document.createElement('p');
+  specialty.textContent = `Especialidad: ${chef.specialty}`;
+  specialty.classList.add('animate__animated', 'animate__slideInLeft');
+  leftSide.appendChild(specialty);
   
-    // Append the main container to the chefInfo element
-    chefInfoElement.appendChild(container);
+  const dish = document.createElement('p');
+  dish.textContent = `Plato Famoso: ${chef.dish}`;
+  dish.classList.add('animate__animated', 'animate__slideInLeft');
+  leftSide.appendChild(dish);
   
-    // After a slight delay, add the "show" class to trigger the fade-in effect
-    setTimeout(() => {
-      const fadeInElements = document.querySelectorAll('.fade-in');
-      fadeInElements.forEach(element => {
-        element.classList.add('show');
-      });
-    }, 50); // Short delay to ensure elements are in the DOM before transition starts
-    
-    // Move to the next chef
-    currentChefIndex = (currentChefIndex + 1) % chefsInfo.length;
+  const rightSide = document.createElement('div');
+  rightSide.style.flex = '0 1 40%'; // Fix width of right side to 40%
+  
+  const story = document.createElement('p');
+  story.textContent = chef.story;
+  story.classList.add('animate__animated', 'animate__slideInLeft');
+  rightSide.appendChild(story);
+  
+  // Append left and right side containers to the main container
+  container.appendChild(leftSide);
+  container.appendChild(rightSide);
+  
+  // Append the main container and name to the chefInfo element
+  chefInfoElement.appendChild(name);
+  chefInfoElement.appendChild(container);
+  
+  return chefInfoElement;
 }
 
-function changeChefInfo() {
-    // Display info initially
-    displayChefInfo();
+// Function to clear the current chef info
+function clearChefInfo() {
+  const chefInfoElement = document.getElementById('chefInfo');
   
-    // Change chef information every 5 seconds (5000ms)
-    setInterval(displayChefInfo, chefTimeSync);
+  // Remove the previous chef info (without clearing the entire HTML)
+  while (chefInfoElement.firstChild) {
+    chefInfoElement.removeChild(chefInfoElement.firstChild);
+  }
+}
+
+// Function to apply slide-in effect using Animate.css
+function applySlideEffect() {
+  const slideOutElements = document.querySelectorAll('.animate__slideInLeft');
+  slideOutElements.forEach(element => {
+    element.classList.remove('animate__slideInLeft'); // Remove slideInLeft to start sliding out
+    element.classList.add('animate__slideOutLeft'); // Add slideOutLeft class
+  });
+
+  // After a short delay, trigger slide-in for new content
+  setTimeout(() => {
+    const slideInElements = document.querySelectorAll('.animate__slideInLeft');
+    slideInElements.forEach(element => {
+      element.classList.remove('animate__slideOutLeft'); // Remove slideOutLeft
+      element.classList.add('animate__slideInLeft'); // Add slideInLeft class
+    });
+  }, 50); // Short delay to ensure elements are in the DOM before transition starts
+}
+
+// Function to display new chef info with appropriate slide effects
+function displayNewChefInfo() {
+  const chef = chefsInfo[currentChefIndex];
+  
+  if (isFirstLoad) {
+    // Display content immediately on first load with slide-in effect
+    createChefInfoElement(chef);
+    applySlideEffect();
+    isFirstLoad = false;
+  } else {
+    // Slide out old content before replacing it
+    clearChefInfo();
+    // Create and display new content
+    createChefInfoElement(chef);
+    applySlideEffect();
+  }
+  
+  // Move to the next chef
+  currentChefIndex = (currentChefIndex + 1) % chefsInfo.length;
+}
+
+// Function to periodically change chef info
+function changeChefInfo() {
+  // Display info initially
+  displayNewChefInfo();
+  
+  // Change chef information every 5 seconds (5000ms)
+  setInterval(displayNewChefInfo, chefTimeSync - 500);
 }
 
 changeChefInfo();
+
 
 function switchBgImages(containerId, imageUrls, interval) {
     let currentIndex = 0;

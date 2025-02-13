@@ -9,88 +9,97 @@
     ></script>
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
-    <link rel="stylesheet" href="assets/css/menu.css" />
-    <link rel="stylesheet" href="assets/css/about_us.css" />
-    <link rel="stylesheet" href="assets/css/reservas.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/cartas.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
     <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
 
-    <script src="assets/js/preloader.js" defer></script>
-    <script src="assets/js/header.js" defer></script>
-    <script src="assets/js/menu.js" defer></script>
-    <script src="assets/js/reservas.js" defer></script>
-	  <script src="assets/js/about_us.js" defer></script>
+      <script src="assets/js/header.js" defer></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Do Camiño</title>
+    <title>Do Cami&ntilde;o</title>
   </head>
   <body>
-    <!-- Loader -->
-    <!-- <div id="preloader">
-      <div class="counter">
-          <span id="count">0</span>
-          <p>Peregrinos en 2024</p>
-      </div>
-  </div> -->
+    
   <div id="content" >
     <!-- Perol - HEADER -->
-    <header class="header" id="header">
-     <img src="assets/images/logo.png" alt="Logo Do Camiño" class="header-img-logo" />
+   <header class="header" id="header">
+      <a href="/index.html"><img src="assets/images/logo.png" alt="Logo Do Cami&ntilde;o" class="header-img-logo" /></a>
       <span class="header-menu" onclick="toggleMenu()">☰</span>
       <ul class="header-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="index.html#about-us">ABOUT US</a></li>
-        <li><a href="index.html#contacto">CONTACTO</a></li>
+        <li><a href="#about-us">ABOUT US</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
       </ul>
     </header>
 <!-- CARTAS CON BOOTSTRAP -->
 
     <main>
-
-      <hr> 
+      <hr>
+      <div id="cartas" class="container mx-auto w-90 d-flex flex-column mb-3 justift-content-between">
            
 
-      <div class="accordion accordion-flush" id="accordionFlushExample"></div>
+      <div class="accordion accordion-flush " id="acordeonMenu">
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        Menu 1 
+      <button class="accordion-button collapsed custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <div class="container mx-auto">
+          <h1 class="text-center">Men&uacute; Cami&ntilde;o da Prata </h1>
+        </div>
       </button>
     </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#acordeonMenu">
       <div class="accordion-body"><div class="container mx-auto">
-<p class="h1 text-center">Cartas</p>
 
 
       </div>
      <hr>
-     <p class="h1 text-center" id="menu1">Camiño da Prata</p>
+     <p class="h1 text-center" id="menu1">Cami&ntilde;o da Prata</p>
 
        <main>
       <div class="container mx-auto d-sm-flex flex-row mb-2 justify-content-evenly" >
 
+        <div class="card" style="width: 18rem; height: 30rem;">
+          <img src="assets/images/carta/menu1/migas.jpg" class="card-img-top" alt="Imagen postre primer men&uacute;" >
+          <div class="card-body">
+            <h5 class="card-title">Migas extreme&ntilde;as</h5>
+            <p class="card-text">Plato r&uacute;stico de pan desmenuzado, frito con ajo, pimientos, chorizo y panceta, lleno de sabor y tradici&oacute;n.</p>
+            <hr class="border border-danger border-2 opacity-50">
+        <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>    <i class="fa-solid fa-egg"></i><i class="fa-solid fa-cow"></i>
+          </div>
+        </div>
 
       <div class="card" style="width: 18rem;">
-  <img src="assets/images/carta/menu1/pulpo.jpg" class="card-img-top" alt="Imagen principal primer menú">
+  <img src="assets/images/carta/menu1/merluza.jpg" class="card-img-top" alt="Imagen principal primer men&uacute;">
   <div class="card-body">
-    <h5 class="card-title">Pulpo á feira</h5>
-    <p class="card-text">Delicioso plato gallego de pulpo con pimientón</p>
+    <h5 class="card-title">Merluza a la Sidra</h5>
+    <p class="card-text">Plato fresco de pescado cocinado en una salsa suave de sidra, que le da un toque afrutado y delicioso.</p>
     <hr class="border border-danger border-2 opacity-50">
     <i class="fa-solid fa-shrimp"></i> 
     
   </div>
 </div>
 
+
+
 <div class="card" style="width: 18rem;">
-  <img src="assets/images/menu/menu1-2.jpg" class="card-img-top" alt="Imagen postre primer menú" height="400" width="400">
+  <img src="assets/images/carta/menu1/pulpo.jpg" class="card-img-top" alt="Imagen principal primer men&uacute;">
+  <div class="card-body">
+    <h5 class="card-title">Pulpo &aacute; feira</h5>
+    <p class="card-text">Delicioso plato gallego de pulpo con piment&oacute;n.</p>
+    <hr class="border border-danger border-2 opacity-50">
+    <i class="fa-solid fa-shrimp"></i> 
+    
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="assets/images/carta/menu1/piononos.jpg" class="card-img-top" alt="Imagen postre primer men&uacute;" >
   <div class="card-body">
     <h5 class="card-title">Pionono de Santa Fe</h5>
-    <p class="card-text">Postre andaluz relleno de crema que endulzará su estancia</p>
+    <p class="card-text">Postre andaluz relleno de crema que endulzar&aacute; su estancia.</p>
     <hr class="border border-danger border-2 opacity-50">
 <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>    <i class="fa-solid fa-egg"></i><i class="fa-solid fa-cow"></i>
   </div>
@@ -100,56 +109,80 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Menu 2
-      </button>
+      <button class="accordion-button collapsed custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+ <div class="container mx-auto">
+          <h1 class="text-center">Men&uacute; Cami&ntilde;o do Norte</h1>
+        </div>      </button>
     </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body"><p class="h1 text-center" id="menu2">Camiño do Norte</p>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#acordeonMenu">
+      <div class="accordion-body"><p class="h1 text-center" id="menu2">Cami&ntilde;o do Norte</p>
 
 <div class="container mx-auto d-sm-flex flex-row mb-2 justify-content-evenly" >
 
 
       <div class="card" style="width: 18rem;">
-  <img src="assets/images/carta/menu2/fabada-asturiana.jpg" class="card-img-top" alt="Imagen principal segundo menú">
+  <img src="assets/images/carta/menu2/fabada-asturiana.jpg" class="card-img-top" alt="Imagen principal segundo men&uacute;">
   <div class="card-body">
     <h5 class="card-title">Fabada Asturiana</h5>
-    <p class="card-text">Potente plato norteño cargado de energías</p>
+    <p class="card-text">Potente plato norte&ntilde;o cargado de energ&iacute;as</p>
     <hr class="border border-danger border-2 opacity-50">
 <i class="fa-solid fa-cow"></i>    
   </div>
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="assets/images/menu/menu2-1.jpg" class="card-img-top" alt="Imagen postre segundo menú">
+  <img src="assets/images/carta/menu2/paella.jpg" class="card-img-top" alt="Imagen postre segundo men&uacute;">
   <div class="card-body">
-    <h5 class="card-title">Pantxineta</h5>
-    <p class="card-text">Tarta vasca de hojaldre y crema: dulce y redonda</p>
+    <h5 class="card-title">Paella</h5>
+    <p class="card-text">Arroz sabroso con mariscos, carne y un toque de azafr&aacute;n.</p>
     <hr class="border border-danger border-2 opacity-50">
     <i class="fa-solid fa-cow"></i>    
 <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>    <i class="fa-solid fa-egg"></i>
   </div>
 </div>
+<div class="card" style="width: 18rem;">
+  <img src="assets/images/carta/menu2/sopa-ajo.jpg" class="card-img-top" alt="Imagen principal segundo men&uacute;">
+  <div class="card-body">
+    <h5 class="card-title">Sopa de Ajo</h5>
+    <p class="card-text">Caldo de ajo, pan y huevo, ideal para calentar el cuerpo y el alma.</p>
+    <hr class="border border-danger border-2 opacity-50">
+<i class="fa-solid fa-cow"></i>    
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="assets/images/carta/menu2/pantxineta.jpg" class="card-img-top" alt="Imagen postre segundo men&uacute;">
+  <div class="card-body">
+    <h5 class="card-title">Pantxineta</h5>
+    <p class="card-text">Dulce vasco de hojaldre relleno de crema pastelera, crujiente por fuera y suave por dentro.</p>
+    <hr class="border border-danger border-2 opacity-50">
+    <i class="fa-solid fa-cow"></i>    
+<i class="fa-solid fa-wheat-awn-circle-exclamation"></i>    <i class="fa-solid fa-egg"></i>
+  </div>
+</div>
+
       </div></div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Menu 3
+      <button class="accordion-button collapsed custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+       <div class="container mx-auto">
+          <h1 class="text-center">Men&uacute; Cami&ntilde;o Portugues</h1>
+        </div>
       </button>
     </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body"><p class="h1 text-center" id="menu3">Camiño Portugués</p >
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#acordeonMenu">
+      <div class="accordion-body"><p class="h1 text-center" id="menu3">Cami&ntilde;o Portugu&eacute;s</p >
 
 <div class="container mx-auto d-sm-flex flex-row mb-2 justify-content-evenly" >
 
 
       <div class="card" style="width: 18rem;">
-  <img src="assets/images/menu/menu3-1.jpg" class="card-img-top" alt="Imagen principal tercer menú">
+  <img src="assets/images/carta/menu3/bacalao.jpg" class="card-img-top" alt="Imagen principal tercer men&uacute;">
   <div class="card-body">
-    <h5 class="card-title">Arroz de Marisco</h5>
-    <p class="card-text">Plato con el mejor marisco de la costa portuguesa</p>
+    <h5 class="card-title">Bacalhau &aacute; Br&aacute;s</h5>
+    <p class="card-text">Plato portugu&eacute;s con bacalao desmenuzado, papas paja, huevo y cebolla, todo revuelto y lleno de sabor.</p>
     <hr class="border border-danger border-2 opacity-50">
         <i class="fa-solid fa-shrimp"></i> 
 
@@ -157,35 +190,62 @@
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="assets/images/menu/menu3-2.jpg" class="card-img-top" alt="Imagen postre tercer menú">
+  <img src="assets/images/carta/menu3/arroz.jpg" class="card-img-top" alt="Imagen postre tercer men&uacute;">
   <div class="card-body">
-    <h5 class="card-title">Tarta de Almendra</h5>
-    <p class="card-text">Tarta portuguesa de almendra molida, azúcar y huevo</p>
+    <h5 class="card-title">Arroz de Marisco</h5>
+    <p class="card-text">Arroz sabroso con gambas, mejillones y calamares, ¡un verdadero fest&iacute;n del mar!</p>
     <hr class="border border-danger border-2 opacity-50">
     <i class="fa-solid fa-cow"></i>    
 <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>    <i class="fa-solid fa-egg"></i>
 <i class="fa-solid fa-peanut"></i>
   </div>
 </div>
+
+<div class="card" style="width: 18rem;">
+  <img src="assets/images/carta/menu3/francesinha.jpg" class="card-img-top" alt="Imagen postre tercer men&uacute;">
+  <div class="card-body">
+    <h5 class="card-title">Francesinha</h5>
+    <p class="card-text">S&aacute;ndwich portugu&eacute;s relleno de carne, cubierto con queso fundido y bañado en una salsa picante y sabrosa.</p>
+    <hr class="border border-danger border-2 opacity-50">
+    <i class="fa-solid fa-cow"></i>    
+<i class="fa-solid fa-wheat-awn-circle-exclamation"></i>    <i class="fa-solid fa-egg"></i>
+<i class="fa-solid fa-peanut"></i>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="assets/images/carta/menu3/almendra.jpg" class="card-img-top" alt="Imagen postre tercer men&uacute;">
+  <div class="card-body">
+    <h5 class="card-title">Tarta de Almendra</h5>
+    <p class="card-text">Tarta portuguesa de almendra molida, az&uacute;car y huevo</p>
+    <hr class="border border-danger border-2 opacity-50">
+    <i class="fa-solid fa-cow"></i>    
+<i class="fa-solid fa-wheat-awn-circle-exclamation"></i>    <i class="fa-solid fa-egg"></i>
+<i class="fa-solid fa-peanut"></i>
+  </div>
+</div>
+
+</div>
       </div></div>
     </div>
   </div>
 </div>
+</div>
 <hr>
     
-
+</div>
     </main>
     <!-- Alexandre - FOOTER -->
     <footer class="footer" id="contacto">
       <div id="footer-container">
         <section id="footer-1" class="footer-section">
           <p>
-            De conformidad con lo dispuesto en el artículo 10 de la Ley 34/2002,
-            de 11 de julio, de Servicios de Sociedad de la Información y
-            Comercio Electrónico, se informa que
+            De conformidad con lo dispuesto en el art&iacute;culo 10 de la Ley 34/2002,
+            de 11 de julio, de Servicios de Sociedad de la Informaci&oacute;n y
+            Comercio Electr&oacute;nico, se informa que
             <a href="https://www.docamino.com">https://www.docamino.com</a>
             es un dominio de Devind, S.L. con CIF: B55153783 y domicilio social
-            en c/Villaviciosa 12, 16701 Santiago de Compostela, teléfono
+            en c/Villaviciosa 12, 16701 Santiago de Compostela, tel&eacute;fono
             <a href="tel:983548134">983548134</a> y mail
             <a href="mailto:contact@devind.com">contact@devind.com</a>.
           </p>
@@ -216,7 +276,7 @@
         <div class="footer-separator"></div>
 
         <section id="footer-3" class="footer-section">
-          <a href="#">Política de cookies</a>
+          <a href="#">Pol&iacute;tica de cookies</a>
         </section>
       </div>
     </footer>
