@@ -13,11 +13,11 @@ const restaurant = [
 ];
 //TODO
 // Syncs the time between the images and the content of the page.
-const chefTimeSync = 3000;
+const chefTimeSync = 10000;
 
 const chefsInfo = [
     {
-      name: "Pepe Linares",
+      name: "Joaço Linares",
       origin: "Sevilla",
       yearOfSantiago: 2012,
       specialty: "Cocina tradicional andaluza y gallega",
@@ -52,7 +52,7 @@ function createChefInfoElement(chef) {
   
   const name = document.createElement('h2');
   name.textContent = chef.name;
-  name.classList.add('animate__animated', 'animate__slideInLeft'); // Add slideInLeft animation
+  name.classList.add('animate__animated', 'animate__fadeIn'); // Add slideInLeft animation
   
   // Create a container for the chef info using flexbox layout (left side and right side)
   const container = document.createElement('div');
@@ -65,22 +65,22 @@ function createChefInfoElement(chef) {
   
   const origin = document.createElement('p');
   origin.textContent = `Origen: ${chef.origin}`;
-  origin.classList.add('animate__animated', 'animate__slideInLeft');
+  origin.classList.add('animate__animated', 'animate__fadeIn');
   leftSide.appendChild(origin);
   
   const yearOfSantiago = document.createElement('p');
   yearOfSantiago.textContent = `Año en el que hizo el camino: ${chef.yearOfSantiago}`;
-  yearOfSantiago.classList.add('animate__animated', 'animate__slideInLeft');
+  yearOfSantiago.classList.add('animate__animated', 'animate__fadeIn');
   leftSide.appendChild(yearOfSantiago);
   
   const specialty = document.createElement('p');
   specialty.textContent = `Especialidad: ${chef.specialty}`;
-  specialty.classList.add('animate__animated', 'animate__slideInLeft');
+  specialty.classList.add('animate__animated', 'animate__fadeIn');
   leftSide.appendChild(specialty);
   
   const dish = document.createElement('p');
   dish.textContent = `Plato Famoso: ${chef.dish}`;
-  dish.classList.add('animate__animated', 'animate__slideInLeft');
+  dish.classList.add('animate__animated', 'animate__fadeIn');
   leftSide.appendChild(dish);
   
   const rightSide = document.createElement('div');
@@ -88,7 +88,7 @@ function createChefInfoElement(chef) {
   
   const story = document.createElement('p');
   story.textContent = chef.story;
-  story.classList.add('animate__animated', 'animate__slideInLeft');
+  story.classList.add('animate__animated', 'animate__fadeIn');
   rightSide.appendChild(story);
   
   // Append left and right side containers to the main container
@@ -112,22 +112,26 @@ function clearChefInfo() {
   }
 }
 
-// Function to apply slide-in effect using Animate.css
 function applySlideEffect() {
-  const slideOutElements = document.querySelectorAll('.animate__slideInLeft');
-  slideOutElements.forEach(element => {
-    element.classList.remove('animate__slideInLeft'); // Remove slideInLeft to start sliding out
-    element.classList.add('animate__slideOutLeft'); // Add slideOutLeft class
+
+  const slideInElements = document.querySelectorAll('.animate__fadeOut');
+
+  // Fade elements in
+  slideInElements.forEach(element => {
+    element.classList.remove('animate__fadeOut'); // Remove fadeOut to start fading in
+    element.classList.add('animate__fadeIn'); // Add fadeIn to fade in
   });
 
-  // After a short delay, trigger slide-in for new content
+  // After a short delay, hold for the specified amount of time before fading out
   setTimeout(() => {
-    const slideInElements = document.querySelectorAll('.animate__slideInLeft');
-    slideInElements.forEach(element => {
-      element.classList.remove('animate__slideOutLeft'); // Remove slideOutLeft
-      element.classList.add('animate__slideInLeft'); // Add slideInLeft class
-    });
-  }, 50); // Short delay to ensure elements are in the DOM before transition starts
+    // Wait for the fade-in to finish and then fade out
+    setTimeout(() => {
+      slideInElements.forEach(element => {
+        element.classList.remove('animate__fadeIn'); // Remove fadeIn class
+        element.classList.add('animate__fadeOut'); // Add fadeOut class to fade out
+      });
+    }, 100); // Small delay after fade-in to allow the transition to finish (adjust as needed)
+  }, chefTimeSync / 2); // Hold time before fading out (adjust this to your needs)
 }
 
 // Function to display new chef info with appropriate slide effects
@@ -157,7 +161,7 @@ function changeChefInfo() {
   displayNewChefInfo();
   
   // Change chef information every 5 seconds (5000ms)
-  setInterval(displayNewChefInfo, chefTimeSync - 500);
+  setInterval(displayNewChefInfo, chefTimeSync);
 }
 
 changeChefInfo();

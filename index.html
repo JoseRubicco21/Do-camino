@@ -8,6 +8,8 @@
       src="https://kit.fontawesome.com/a7fd78ffdf.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/menu.css" />
@@ -21,6 +23,8 @@
     <script src="assets/js/menu.js" defer></script>
     <script src="assets/js/reservas.js" defer></script>
 	  <script src="assets/js/about_us.js" defer></script>
+    <script src="assets/js/cartas.js" defer></script>
+
 
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 
@@ -32,18 +36,19 @@
     <div id="preloader" class="hidden">
       <div class="counter">
           <span id="count">0</span>
-          <p>Peregrinos en 2024</p>
+          <p>Peregrinos en 2024...</p>
+          <p>¿ pero cuántos lo han saboreado?</p>
       </div>
   </div>
   <div id="content" class="hidden">
     <!-- Perol - HEADER -->
     <header class="header" id="header">
-      <a href="#top"><img src="assets/images/logo.png" alt="Logo Do Camiño" class="header-img-logo" /></a>
+      <a href="#top"><img src="assets/images/logo.png" alt="Logo Do Camiño" class="header-img-logo"/></a>
       <span class="header-menu" onclick="toggleMenu()">☰</span>
       <ul class="header-links">
-        <li><a href="cartas.html">CARTA</a></li>
-        <li><a href="#about-us">ABOUT US</a></li>
-        <li><a href="#contacto">CONTACTO</a></li>
+        <li><a href="cartas.html#flush-collapseOne">CARTA</a></li>
+        <li><a href="#about-us">NOSOTROS</a></li>
+        <li><a href="#reservas">CONTACTO</a></li>
       </ul>
     </header>
     <main>
@@ -147,7 +152,7 @@
                 <li><a href="#">Piononos de Santa Fe (Andaluc&iacute;a)</a></li>
               </ul>
               <br>
-              <a id="linksCarta" href="cartas.html#menu1">VER MEN&Uacute;</a>
+              <a id="linksCarta" href="cartas.html#flush-collapseOne">VER MEN&Uacute;</a>
             </div>
           </div>
           <div
@@ -172,7 +177,7 @@
                 <li><a href="#">Pantxineta</a></li>
               </ul>
               <br>
-              <a id="linksCarta" href="/cartas.html#menu2">VER MEN&Uacute;</a>
+              <a id="linksCarta" href="/cartas.html#flush-collapseTwo">VER MEN&Uacute;</a>
             </div>
           </div>
           <div
@@ -197,7 +202,7 @@
                 <li><a href="#">Tarta de almendra</a></li>
               </ul>
               <br>
-              <a id="linksCarta" href="/cartas.html#menu3">VER MEN&Uacute;</a>
+              <a id="linksCarta" href="/cartas.html#flush-collapseThree">VER MEN&Uacute;</a>
             </div>
           </div>
         </div>

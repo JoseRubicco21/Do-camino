@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let preloader = document.getElementById("preloader");
     let content = document.getElementById("content");
     let currentNumber = parseInt(localStorage.getItem("currentCount")) || 0;
-    let speed = 5; // Velocidad de la animación
+    let speed = 15; // Velocidad de la animación
     let preloaderShown = localStorage.getItem("preloaderShown");
 
     // Si el preloader ya se mostró antes, ocultar el preloader de inmediato

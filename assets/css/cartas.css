@@ -1,7 +1,12 @@
+/* El siguiente código establece los estilos de la página de cartas.html*/
+
+
+
 .card-title{
   font-family: Rubik;
 }
 .card-body{
+  font-family: 'Nunito Sans';
   background-color: var(--background-dark);
 }
 #cartas{
@@ -16,7 +21,11 @@ body{
   height: 30rem;
 }
 
+/* El siguiente código establece los estilos de los botones del accordion*/
+
+
 .custom-button {
+  font-family: Rubik;
   background-color: var(--background-light) !important;
   outline: none;
   box-shadow: none;
@@ -34,6 +43,8 @@ border: 0.2px  solid rgb(107,83,61,0.5);
 .panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
   border: none;
 }
+
+/* Código para garantizar responsiveness*/ 
 
 @media (max-width: 1024px) {
   .card {

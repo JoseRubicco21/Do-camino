@@ -6,6 +6,8 @@ let enviarReserva = document.getElementById('buttonForm')
 tablaCalendario.addEventListener('click', mostrarData);
 enviarReserva.addEventListener('click', limpiarFormulario)
 
+// Código que modifica el valor del día dependiendo de cuál pulse el usuario
+
 function mostrarData(event) {
 	if (event.target.classList.contains('dayAvaliable')) {
 		console.log('check');
@@ -14,6 +16,8 @@ function mostrarData(event) {
 		dataSeleccionada.value = `${dia}/02/2025`;
 	}
 }
+
+// Código que limpia los inputs del formulario después de enviar
 
 function limpiarFormulario(event) {
 	event.preventDefault();

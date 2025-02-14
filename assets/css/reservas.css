@@ -1,3 +1,5 @@
+/* Colocación de los elementos dentro del apartado de reservas*/ 
+
 #reservas {
 	margin: auto;
 	display: grid;
@@ -22,6 +24,9 @@
 	width: 90%;
 	font-family: Rubik;
 }
+
+/* Estilos de la tabla que muestra la leyenda de las reservas*/
+
 #tablaLeyenda ul {
 	list-style-type: none;
 	padding: 5px;
@@ -60,6 +65,9 @@
 	margin-right: 10px;
 	border: 1px solid;
 }
+
+/*Estilos pertinentes a la tabla del calendario de reservas*/
+
 #tablaCalendario > caption {
 	font-weight: 600;
 }
@@ -97,12 +105,13 @@
 	cursor: pointer;
 }
 
+/*Estilos para el formulario de reservas*/
+
 #formulario {
 	display: grid;
 	place-items: center;
 	grid-template-columns: 1fr;
 	grid-gap: 20px;
-
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	width: 100%;
@@ -166,7 +175,8 @@
 	box-shadow: 1.5px 2px 0 #000;
 	outline: none;
 	transition: ease 0.25s;
-	scale: 1.2
+	scale: 1.2;
+	padding: 2px;
 }
 
 .input:focus {
@@ -191,6 +201,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 }
 
 #formulario label {

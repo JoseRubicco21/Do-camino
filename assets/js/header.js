@@ -1,12 +1,15 @@
+const menu = document.querySelector('.header-links');
+const menuButton = document.querySelector('.header-menu');
+
 function toggleMenu() {
-    const menu = document.querySelector('.header-links');
     menu.classList.toggle('show');
 }
 
-document.addEventListener('click', function(event) {
-    const menu = document.querySelector('.header-links');
-    const menuButton = document.querySelector('.header-menu');
+menu.addEventListener('click', function(){
+    
+})
 
+document.addEventListener('click', function(event) {
     if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
         menu.classList.remove('show');
     }
