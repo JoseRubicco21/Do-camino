@@ -73,4 +73,5 @@ header, main, footer {
 
 main {
   background-color: var(--background-light);
+  min-height: 65vh;
 }
