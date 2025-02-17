@@ -4,12 +4,10 @@
 document.addEventListener('DOMContentLoaded', function () {
 	// Obtén el hash de la URL (por ejemplo, "#flush-collapseOne")
 	let hash = window.location.hash;
-	console.log(hash);
 	// Si hay un hash en la URL
 	if (hash) {
 		// Selecciona el elemento del acordeón usando el hash
 		let targetCollapse = document.querySelector(hash);
-		console.log(targetCollapse);
 		// Si el elemento existe, despliégalo usando Bootstrap
 		if (targetCollapse) {
 			console.log('Should collapse');
