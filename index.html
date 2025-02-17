@@ -1,423 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script
-      src="https://kit.fontawesome.com/a7fd78ffdf.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<script
+			src="https://kit.fontawesome.com/a7fd78ffdf.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="assets/css/base.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
-    <link rel="stylesheet" href="assets/css/menu.css" />
-    <link rel="stylesheet" href="assets/css/about_us.css" />
-    <link rel="stylesheet" href="assets/css/reservas.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+		<link rel="stylesheet" href="assets/css/base.css" />
+		<link rel="stylesheet" href="assets/css/header.css" />
+		<link rel="stylesheet" href="assets/css/menu.css" />
+		<link rel="stylesheet" href="assets/css/about_us.css" />
+		<link rel="stylesheet" href="assets/css/reservas.css" />
+		<link rel="stylesheet" href="assets/css/footer.css" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="assets/images/favicon/favicon.ico"
+		/>
 
-    <script src="assets/js/preloader.js" defer></script>
-    <script src="assets/js/header.js" defer></script>
-    <script src="assets/js/menu.js" defer></script>
-    <script src="assets/js/reservas.js" defer></script>
-	  <script src="assets/js/about_us.js" defer></script>
-    <script src="assets/js/cartas.js" defer></script>
+		<script src="assets/js/preloader.js" defer></script>
+		<script src="assets/js/header.js" defer></script>
+		<script src="assets/js/menu.js" defer></script>
+		<script src="assets/js/reservas.js" defer></script>
+		<script src="assets/js/about_us.js" defer></script>
+		<script src="assets/js/cartas.js" defer></script>
 
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+		<title>Do Camiño</title>
+	</head>
+	<body>
+		<!-- Loader -->
+		<div id="preloader" class="hidden">
+			<div class="counter">
+				<span id="count">0</span>
+				<p>Peregrinos en 2024...</p>
+				<p>¿ pero cuántos lo han saboreado?</p>
+			</div>
+		</div>
+		<div id="content" class="hidden">
+			<!-- Perol - HEADER -->
+			<header class="header" id="header">
+				<a href="#top"
+					><img
+						src="assets/images/logo.png"
+						alt="Logo Do Camiño"
+						class="header-img-logo"
+				/></a>
+				<span class="header-menu" onclick="toggleMenu()">☰</span>
+				<ul class="header-links">
+					<li><a href="cartas.html#flush-collapseOne">CARTA</a></li>
+					<li><a href="#about-us">NOSOTROS</a></li>
+					<li><a href="#reservas">CONTACTO</a></li>
+				</ul>
+			</header>
+			<main>
+				<!-- Gabriel - CARTAS -->
+				<section class="menu-section" id="cartas">
+					<div class="section-header">
+						<p class="slogan">
+							Has recorrido el Camino, ahora saborea cada paso.
+						</p>
+					</div>
+					<div class="caminar-container">
+						<div class="caminar">
+							<img
+								src="assets/images/steps.png"
+								class="huella"
+								alt="Huellas"
+								id="huella1"
+							/>
+							<img
+								src="assets/images/steps-reverse.png"
+								class="huella"
+								alt="Huellas"
+								id="huella2"
+							/>
+							<img
+								src="assets/images/steps.png"
+								class="huella"
+								alt="Huellas"
+								id="huella3"
+							/>
+							<img
+								src="assets/images/steps-reverse.png"
+								class="huella"
+								alt="Huellas"
+								id="huella4"
+							/>
+							<img
+								src="assets/images/steps.png"
+								class="huella"
+								alt="Huellas"
+								id="huella5"
+							/>
+							<img
+								src="assets/images/steps-reverse.png"
+								class="huella"
+								alt="Huellas"
+								id="huella6"
+							/>
+							<img
+								src="assets/images/steps.png"
+								class="huella"
+								alt="Huellas"
+								id="huella7"
+							/>
+							<img
+								src="assets/images/steps-reverse.png"
+								class="huella"
+								alt="Huellas"
+								id="huella8"
+							/>
+							<img
+								src="assets/images/steps.png"
+								class="huella"
+								alt="Huellas"
+								id="huella9"
+							/>
+							<img
+								src="assets/images/steps-reverse.png"
+								class="huella"
+								alt="Huellas"
+								id="huella10"
+							/>
+							<img
+								src="assets/images/steps.png"
+								class="huella"
+								alt="Huellas"
+								id="huella11"
+							/>
+						</div>
+					</div>
+					<div class="tarjetas-container">
+						<div
+							class="tarjeta animate__animated animate__fadeInUp"
+							id="tarjeta1"
+						>
+							<div class="detras">
+								<h3>Men&uacute; del Camino de la Plata</h3>
+								<h4>Entrantes</h4>
+								<ul>
+									<li><a href="#">Sardinas a la Parrilla</a></li>
+									<li><a href="#">Migas extreme&ntilde;as (Extremadura)</a></li>
+								</ul>
+								<h4>Plato Principal</h4>
+								<ul>
+									<li><a href="#">Pulpo a la gallega (Galicia)</a></li>
+									<li><a href="#">Merluza a la Sidra</a></li>
+								</ul>
+								<h4>Postres</h4>
+								<ul>
+									<li><a href="#">Arroz con Leche</a></li>
+									<li>
+										<a href="#">Piononos de Santa Fe (Andaluc&iacute;a)</a>
+									</li>
+								</ul>
+								<br />
+								<a id="linksCarta" href="cartas.html#flush-collapseOne"
+									>VER MEN&Uacute;</a
+								>
+							</div>
+						</div>
+						<div
+							class="tarjeta animate__animated animate__fadeInTopLeft"
+							id="tarjeta2"
+						>
+							<div class="detras">
+								<h3>Menú del Camino del Norte</h3>
+								<h4>Entrantes</h4>
+								<ul>
+									<li><a href="#">Fabada asturiana</a></li>
+									<li><a href="#">Sopa de Ajo</a></li>
+								</ul>
+								<h4>Plato Principal</h4>
+								<ul>
+									<li><a href="#">Paella</a></li>
+									<li><a href="#">Pechuga de Pollo</a></li>
+								</ul>
+								<h4>Postres</h4>
+								<ul>
+									<li><a href="#">Tarta de Santiago</a></li>
+									<li><a href="#">Pantxineta</a></li>
+								</ul>
+								<br />
+								<a id="linksCarta" href="/cartas.html#flush-collapseTwo"
+									>VER MEN&Uacute;</a
+								>
+							</div>
+						</div>
+						<div
+							class="tarjeta animate__animated animate__fadeInTopRight"
+							id="tarjeta3"
+						>
+							<div class="detras">
+								<h3>Men&uacute; del Camino Portugu&eacute;s</h3>
+								<h4>Entrantes</h4>
+								<ul>
+									<li><a href="#">Bacalhau &agrave; Br&aacute;s</a></li>
+									<li><a href="#">Caldo Verde</a></li>
+								</ul>
+								<h4>Plato Principal</h4>
+								<ul>
+									<li><a href="#">Arroz de marisco</a></li>
+									<li><a href="#">Francesinha</a></li>
+								</ul>
+								<h4>Postres</h4>
+								<ul>
+									<li><a href="#">Pasteis de Nata</a></li>
+									<li><a href="#">Tarta de almendra</a></li>
+								</ul>
+								<br />
+								<a id="linksCarta" href="/cartas.html#flush-collapseThree"
+									>VER MEN&Uacute;</a
+								>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Jose - ABOUT US -->
+				<section id="about-us">
+					<div class="about-us-img" id="about-us-1"></div>
+					<article class="about-us-text" id="about-us-2">
+						<h2>El Restaurante</h2>
+						<p>
+							Do Cami&ntilde;o naci&oacute; de una idea simple pero profunda:
+							'Si tantos recorren el camino a pie, &iquest;por qu&eacute; no
+							recorrerlo a trav&eacute;s del gusto?' Con esta premisa, decidimos
+							crear un restaurante que viaje gastron&oacute;micamente por los
+							caminos que conducen a la venerada Santiago de Compostela,
+							ofreciendo una experiencia &uacute;nica para los sentidos.
+						</p>
+						<p>
+							Contamos con una variedad de men&uacute;s dise&ntilde;ados para
+							brindarte una experiencia gastron&oacute;mica &uacute;nica, que te
+							llevar&aacute; a descubrir los sabores m&aacute;s representativos
+							de las regiones recorridas por los peregrinos en sus distintos
+							caminos. Cada plato es una invitaci&oacute;n a explorar rutas
+							a&uacute;n no transitadas, donde podr&aacute;s vivir la esencia de
+							cada destino a trav&eacute;s de sus sabores m&aacute;s
+							emblem&aacute;ticos.
+						</p>
+					</article>
+					<article class="about-us-text" id="about-us-3">
+						<h2>El equipo</h2>
+						<p>
+							Los mejores cocineros de Santiago que tamb&iacute;en han recorrido
+							el camino.
+						</p>
+						<div id="chefInfo" class=".fade-container"></div>
+					</article>
+					<div class="fade-container about-us-img" id="about-us-4"></div>
+				</section>
+				<!-- Brais - RESERVAS -->
+				<div id="tablaLeyenda">
+					<ul>
+						<li id="leyendaClosed">Cerrado</li>
+						<li id="leyendaFull">Completo</li>
+						<li id="leyendaAvaliable">Disponible</li>
+					</ul>
+				</div>
+				<section id="reservas">
+					<aside id="calendario">
+						<table id="tablaCalendario">
+							<caption id="tituloTabla">
+								<i class="fa-solid fa-caret-left"></i
+								>Febrero 2025<i class="fa-solid fa-caret-right"></i>
+							</caption>
+							<thead>
+								<th>L</th>
+								<th>M</th>
+								<th>Mi</th>
+								<th>J</th>
+								<th>V</th>
+								<th>S</th>
+								<th>D</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td class="dayPast">1</td>
+									<td class="dayPast">2</td>
+								</tr>
+								<tr>
+									<td class="dayPast">3</td>
+									<td class="dayPast">4</td>
+									<td class="dayPast">5</td>
+									<td class="dayPast">6</td>
+									<td class="dayPast">7</td>
+									<td class="dayClosed">8</td>
+									<td class="dayClosed">9</td>
+								</tr>
+								<tr>
+									<td class="dayPast">10</td>
+									<td class="dayPast">11</td>
+									<td class="dayPast">12</td>
+									<td class="dayPast">13</td>
+									<td class="dayPast">14</td>
+									<td class="dayClosed">15</td>
+									<td class="dayClosed">16</td>
+								</tr>
+								<tr>
+									<td class="dayToday">17</td>
+									<td class="dayFull">18</td>
+									<td class="dayAvaliable">19</td>
+									<td class="dayAvaliable">20</td>
+									<td class="dayFull">21</td>
+									<td class="dayClosed">22</td>
+									<td class="dayClosed">23</td>
+								</tr>
+								<tr>
+									<td class="dayFull">24</td>
+									<td class="dayFull">25</td>
+									<td class="dayAvaliable">26</td>
+									<td class="dayAvaliable">27</td>
+									<td class="dayAvaliable">28</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</aside>
+					<aside id="formulario">
+						<form action="/">
+							<div id="dataHoraDiv">
+								<label for="dataSeleccionada">Data Seleccionada</label>
+								<br />
+								<input
+									class="input"
+									type="text"
+									id="dataSeleccionada"
+									name="dataSeleccionada"
+									aria-label="Muestra la hora seleccionada"
+									disabled
+								/>
 
+								<label for="horaReserva">Hora</label>
+								<br />
+								<select
+									id="horaReserva"
+									name="horaReserva"
+									class="input"
+									aria-label="Seleccion de hora"
+								>
+									<option value="13:00">13:00</option>
+									<option value="14:00">14:00</option>
+									<option value="15:00">15:00</option>
+									<option value="20:00">20:00</option>
+									<option value="21:00">21:00</option>
+									<option value="22:00">22:00</option>
+									<option value="23:00">23:00</option>
+								</select>
+							</div>
+							<div id="correoNumeroDiv">
+								<label for="email">Correo electr&oacute;nico:</label>
+								<br />
+								<input
+									class="input"
+									type="email"
+									id="email"
+									name="email"
+									aria-label="Input de email"
+									required
+								/>
 
-    <title>Do Camiño</title>
-  </head>
-  <body>
-    <!-- Loader -->
-    <div id="preloader" class="hidden">
-      <div class="counter">
-          <span id="count">0</span>
-          <p>Peregrinos en 2024...</p>
-          <p>¿ pero cuántos lo han saboreado?</p>
-      </div>
-  </div>
-  <div id="content" class="hidden">
-    <!-- Perol - HEADER -->
-    <header class="header" id="header">
-      <a href="#top"><img src="assets/images/logo.png" alt="Logo Do Camiño" class="header-img-logo"/></a>
-      <span class="header-menu" onclick="toggleMenu()">☰</span>
-      <ul class="header-links">
-        <li><a href="cartas.html#flush-collapseOne">CARTA</a></li>
-        <li><a href="#about-us">NOSOTROS</a></li>
-        <li><a href="#reservas">CONTACTO</a></li>
-      </ul>
-    </header>
-    <main>
-      <!-- Gabriel - CARTAS -->
-      <section class="menu-section" id="cartas">
-        <div class="section-header">
-          <p class="slogan">
-            Has recorrido el Camino, ahora saborea cada paso.
-          </p>
-        </div>
-        <div class="caminar-container">
-          <div class="caminar">
-            <img
-              src="/assets/images/steps.png"
-              class="huella"
-              alt="Huellas"
-              id="huella1"
-            />
-            <img
-              src="/assets/images/steps-reverse.png"
-              class="huella"
-              alt="Huellas"
-              id="huella2"
-            />
-            <img
-              src="/assets/images/steps.png"
-              class="huella"
-              alt="Huellas"
-              id="huella3"
-            />
-            <img
-              src="/assets/images/steps-reverse.png"
-              class="huella"
-              alt="Huellas"
-              id="huella4"
-            />
-            <img
-              src="/assets/images/steps.png"
-              class="huella"
-              alt="Huellas"
-              id="huella5"
-            />
-            <img
-              src="/assets/images/steps-reverse.png"
-              class="huella"
-              alt="Huellas"
-              id="huella6"
-            />
-            <img
-              src="/assets/images/steps.png"
-              class="huella"
-              alt="Huellas"
-              id="huella7"
-            />
-            <img
-              src="/assets/images/steps-reverse.png"
-              class="huella"
-              alt="Huellas"
-              id="huella8"
-            />
-            <img
-              src="/assets/images/steps.png"
-              class="huella"
-              alt="Huellas"
-              id="huella9"
-            />
-            <img
-              src="/assets/images/steps-reverse.png"
-              class="huella"
-              alt="Huellas"
-              id="huella10"
-            />
-            <img
-              src="/assets/images/steps.png"
-              class="huella"
-              alt="Huellas"
-              id="huella11"
-            />
-          </div>
-        </div>
-        <div class="tarjetas-container">
-          <div
-            class="tarjeta animate__animated animate__fadeInUp"
-            id="tarjeta1"
-          >
-            <div class="detras">
-              <h3>Men&uacute; del Camino de la Plata</h3>
-              <h4>Entrantes</h4>
-              <ul>
-                <li><a href="#">Sardinas a la Parrilla</a></li>
-                <li><a href="#">Migas extreme&ntilde;as (Extremadura)</a></li>
-              </ul>
-              <h4>Plato Principal</h4>
-              <ul>
-                <li><a href="#">Pulpo a la gallega (Galicia)</a></li>
-                <li><a href="#">Merluza a la Sidra</a></li>
-              </ul>
-              <h4>Postres</h4>
-              <ul>
-                <li><a href="#">Arroz con Leche</a></li>
-                <li><a href="#">Piononos de Santa Fe (Andaluc&iacute;a)</a></li>
-              </ul>
-              <br>
-              <a id="linksCarta" href="cartas.html#flush-collapseOne">VER MEN&Uacute;</a>
-            </div>
-          </div>
-          <div
-            class="tarjeta animate__animated animate__fadeInTopLeft"
-            id="tarjeta2"
-          >
-            <div class="detras">
-              <h3>Menú del Camino del Norte</h3>
-              <h4>Entrantes</h4>
-              <ul>
-                <li><a href="#">Fabada asturiana</a></li>
-                <li><a href="#">Sopa de Ajo</a></li>
-              </ul>
-              <h4>Plato Principal</h4>
-              <ul>
-                <li><a href="#">Paella</a></li>
-                <li><a href="#">Pechuga de Pollo</a></li>
-              </ul>
-              <h4>Postres</h4>
-              <ul>
-                <li><a href="#">Tarta de Santiago</a></li>
-                <li><a href="#">Pantxineta</a></li>
-              </ul>
-              <br>
-              <a id="linksCarta" href="/cartas.html#flush-collapseTwo">VER MEN&Uacute;</a>
-            </div>
-          </div>
-          <div
-            class="tarjeta animate__animated animate__fadeInTopRight"
-            id="tarjeta3"
-          >
-            <div class="detras">
-              <h3>Men&uacute; del Camino Portugu&eacute;s</h3>
-              <h4>Entrantes</h4>
-              <ul>
-                <li><a href="#">Bacalhau &agrave; Br&aacute;s</a></li>
-                <li><a href="#">Caldo Verde</a></li>
-              </ul>
-              <h4>Plato Principal</h4>
-              <ul>
-                <li><a href="#">Arroz de marisco</a></li>
-                <li><a href="#">Francesinha</a></li>
-              </ul>
-              <h4>Postres</h4>
-              <ul>
-                <li><a href="#">Pasteis de Nata</a></li>
-                <li><a href="#">Tarta de almendra</a></li>
-              </ul>
-              <br>
-              <a id="linksCarta" href="/cartas.html#flush-collapseThree">VER MEN&Uacute;</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Jose - ABOUT US -->
-      <section id="about-us">
-        <div class="about-us-img" id="about-us-1"></div>
-        <article class="about-us-text" id="about-us-2">
-          <h2>El Restaurante</h2>
-          <p>
-            Do Cami&ntilde;o naci&oacute; de una idea simple pero profunda: 'Si tantos recorren el camino a pie, &iquest;por qu&eacute; no recorrerlo a trav&eacute;s del gusto?' Con esta premisa, decidimos crear un restaurante que viaje gastron&oacute;micamente por los caminos que conducen a la venerada Santiago de Compostela, ofreciendo una experiencia &uacute;nica para los sentidos.
-          </p>
-          <p>
-            Contamos con una variedad de men&uacute;s dise&ntilde;ados para brindarte una experiencia gastron&oacute;mica &uacute;nica, que te llevar&aacute; a descubrir los sabores m&aacute;s representativos de las regiones recorridas por los peregrinos en sus distintos caminos. Cada plato es una invitaci&oacute;n a explorar rutas a&uacute;n no transitadas, donde podr&aacute;s vivir la esencia de cada destino a trav&eacute;s de sus sabores m&aacute;s emblem&aacute;ticos.
-          </p>
-        </article>
-        <article class="about-us-text" id="about-us-3">
-          <h2>El equipo</h2>
-          <p>
-            Los mejores cocineros de Santiago que tamb&iacute;en han recorrido el
-            camino.
-          </p>
-          <div id="chefInfo" class=".fade-container">
+								<label for="numGente">N&uacute;mero de personas:</label>
+								<br />
+								<input
+									class="input"
+									type="number"
+									id="numGente"
+									name="numGente"
+									min="1"
+									max="10"
+									aria-label="Input de Numero de Gente que asiste"
+									required
+								/>
+							</div>
+							<div id="comentarioDiv">
+								<label for="comentario">Comentarios adicionales:</label><br />
+								<textarea
+									class="input"
+									id="comentario"
+									name="comentario"
+									rows="4"
+									cols="20"
+									aria-label="Comentarios extra"
+								></textarea>
+							</div>
+							<div id="buttonDiv">
+								<button type="button" id="buttonForm">Enviar Reserva</button>
+							</div>
+						</form>
+					</aside>
+				</section>
+			</main>
+			<!-- Alexandre - FOOTER -->
+			<footer class="footer" id="contacto">
+				<div id="footer-container">
+					<section id="footer-1" class="footer-section">
+						<p>
+							De conformidad con lo dispuesto en el art&iacute;culo 10 de la Ley
+							34/2002, de 11 de julio, de Servicios de Sociedad de la
+							Informaci&oacute;n y Comercio Electr&oacute;nico, se informa que
+							<a href="https://www.docamino.com">https://www.docamino.com</a>
+							es un dominio de Devind, S.L. con CIF: B55153783 y domicilio
+							social en c/Villaviciosa 12, 16701 Santiago de Compostela,
+							tel&eacute;fono
+							<a href="tel:983548134">983548134</a> y mail
+							<a href="mailto:contact@devind.com">contact@devind.com</a>.
+						</p>
+					</section>
 
-          </div>
-        </article>
-        <div class="fade-container about-us-img" id="about-us-4"></div>
-      </section>
-      <!-- Brais - RESERVAS -->
-      <div id="tablaLeyenda">
-        <ul>
-          <li id="leyendaClosed">Cerrado</li>
-          <li id="leyendaFull">Completo</li>
-          <li id="leyendaAvaliable">Disponible</li>
-        </ul>
-      </div>
-      <section id="reservas">
-        <aside id="calendario">
-          <table id="tablaCalendario">
-            <caption id="tituloTabla">
-              <i class="fa-solid fa-caret-left"></i
-              >Febrero 2025<i class="fa-solid fa-caret-right"></i>
-            </caption>
-            <thead>
-              <th>L</th>
-              <th>M</th>
-              <th>Mi</th>
-              <th>J</th>
-              <th>V</th>
-              <th>S</th>
-              <th>D</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="dayPast">1</td>
-                <td class="dayPast">2</td>
-              </tr>
-              <tr>
-                <td class="dayPast">3</td>
-                <td class="dayPast">4</td>
-                <td class="dayPast">5</td>
-                <td class="dayPast">6</td>
-                <td class="dayPast">7</td>
-                <td class="dayClosed">8</td>
-                <td class="dayClosed">9</td>
-              </tr>
-              <tr>
-                <td class="dayPast">10</td>
-                <td class="dayPast">11</td>
-                <td class="dayPast">12</td>
-                <td class="dayPast">13</td>
-                <td class="dayPast">14</td>
-                <td class="dayClosed">15</td>
-                <td class="dayClosed">16</td>
-              </tr>
-              <tr>
-                <td class="dayToday">17</td>
-                <td class="dayFull">18</td>
-                <td class="dayAvaliable">19</td>
-                <td class="dayAvaliable">20</td>
-                <td class="dayFull">21</td>
-                <td class="dayClosed">22</td>
-                <td class="dayClosed">23</td>
-              </tr>
-              <tr>
-                <td class="dayFull">24</td>
-                <td class="dayFull">25</td>
-                <td class="dayAvaliable">26</td>
-                <td class="dayAvaliable">27</td>
-                <td class="dayAvaliable">28</td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </aside>
-        <aside id="formulario">
-          <form action="/">
-            <div id="dataHoraDiv">
-              <label for="dataSeleccionada">Data Seleccionada</label>
-              <br />
-              <input
-                class="input"
-                type="text"
-                id="dataSeleccionada"
-                name="dataSeleccionada"
-                aria-label="Muestra la hora seleccionada"
-                disabled
-              />
+					<div class="footer-separator"></div>
 
-              <label for="horaReserva">Hora</label>
-              <br />
-              <select id="horaReserva" name="horaReserva" class="input" aria-label="Seleccion de hora">
-                <option value="13:00">13:00</option>
-                <option value="14:00">14:00</option>
-                <option value="15:00">15:00</option>
-                <option value="20:00">20:00</option>
-                <option value="21:00">21:00</option>
-                <option value="22:00">22:00</option>
-                <option value="23:00">23:00</option>
-              </select>
-            </div>
-            <div id="correoNumeroDiv">
-              <label for="email">Correo electr&oacute;nico:</label>
-              <br />
-              <input
-                class="input"
-                type="email"
-                id="email"
-                name="email"
-                aria-label="Input de email"
-                required
-              />
+					<section id="footer-2" class="footer-section">
+						<ul class="footer-social-list">
+							<li>
+								<a href="#" aria-label="Seguirnos en Facebook"
+									><i class="fa-brands fa-square-facebook fa-2x"></i
+								></a>
+							</li>
+							<li>
+								<a href="#" aria-label="Seguirnos en Instagram"
+									><i class="fa-brands fa-instagram fa-2x"></i
+								></a>
+							</li>
+							<li>
+								<a href="#" aria-label="Seguirnos en Twitter"
+									><i class="fa-brands fa-square-x-twitter fa-2x"></i
+								></a>
+							</li>
+						</ul>
+					</section>
 
-              <label for="numGente">N&uacute;mero de personas:</label>
-              <br />
-              <input
-                class="input"
-                type="number"
-                id="numGente"
-                name="numGente"
-                min="1"
-                max="10"
-                aria-label="Input de Numero de Gente que asiste"
-                required
-              />
-            </div>
-            <div id="comentarioDiv">
-              <label for="comentario">Comentarios adicionales:</label><br />
-              <textarea
-                class="input"
-                id="comentario"
-                name="comentario"
-                rows="4"
-                cols="20"
-                aria-label="Comentarios extra"
-              ></textarea>
-            </div>
-            <div id="buttonDiv">
-              <button type="button" id="buttonForm">Enviar Reserva</button>
-            </div>
-          </form>
-        </aside>
-      </section>
-    </main>
-    <!-- Alexandre - FOOTER -->
-    <footer class="footer" id="contacto">
-      <div id="footer-container">
-        <section id="footer-1" class="footer-section">
-          <p>
-            De conformidad con lo dispuesto en el art&iacute;culo 10 de la Ley 34/2002,
-            de 11 de julio, de Servicios de Sociedad de la Informaci&oacute;n y
-            Comercio Electr&oacute;nico, se informa que
-            <a href="https://www.docamino.com">https://www.docamino.com</a>
-            es un dominio de Devind, S.L. con CIF: B55153783 y domicilio social
-            en c/Villaviciosa 12, 16701 Santiago de Compostela, tel&eacute;fono
-            <a href="tel:983548134">983548134</a> y mail
-            <a href="mailto:contact@devind.com">contact@devind.com</a>.
-          </p>
-        </section>
+					<div class="footer-separator"></div>
 
-        <div class="footer-separator"></div>
-
-        <section id="footer-2" class="footer-section">
-          <ul class="footer-social-list">
-            <li>
-              <a href="#" aria-label="Seguirnos en Facebook"
-                ><i class="fa-brands fa-square-facebook fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Seguirnos en Instagram"
-                ><i class="fa-brands fa-instagram fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Seguirnos en Twitter"
-                ><i class="fa-brands fa-square-x-twitter fa-2x"></i
-              ></a>
-            </li>
-          </ul>
-        </section>
-
-        <div class="footer-separator"></div>
-
-        <section id="footer-3" class="footer-section">
-          <a href="#">Pol&iacute;tica de cookies</a>
-        </section>
-      </div>
-    </footer>
-  </div>
-  </body>
+					<section id="footer-3" class="footer-section">
+						<a href="#">Pol&iacute;tica de cookies</a>
+					</section>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
